@@ -491,8 +491,9 @@ QQ，抖音对我来说一-点都不重要，系统可以优先杀死他们，�
 注：<br>
 <span style="color: red;">内存优化只有开启后台优化后才可使用</span><br>
 <span style="color: red;">从Pro-173开始所有设备固定保留值为物理内存和虚拟内存的10%</span><br>
-如果你希望自定义，请查看：Noactive进阶文档
+如果你希望自定义，请查看：<a href="https://docs.qq.com/doc/DS05PalBZbFR6cEdB">NoActive进阶文档</a>
 </div>
+
 
 <hr>
 <h1 id="Re-kernel"><a href="#Re-kernel" class="headerlink" title="Re-kernel"></a>Re-kernel</h1><div style="background-color: #FFFACD; padding: 10px; border-radius: 5px;">只有Pro版Noactive接入了Re-kernel，对于目前停更的免费版而言，刷入也不会有任何效果

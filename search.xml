@@ -5,31 +5,27 @@
     <url>//NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div align='center' ><font size='70'>NoActive新人必看文档</font></div>
 
-<div class="note danger no-icon flat"><p><span style="color: red;">此文档已放弃维护,同时深色模式下可能存在问题</span></p>
-</div>
+
+
+<!-- <div class="note danger no-icon flat"><p><span style="color: red;">此文档已放弃维护,同时深色模式下可能存在问题</span> </p>
+</div> -->
 
 
 
-<p>本文由<span style="background-color: yellow;">@有问题自觉看新人必看文档</span>(频道ID),<span style="background-color: yellow;">@The End</span>(频道ID),<span style="background-color: yellow;">@璨梦踏月-JOYUI13-5.10</span>(频道ID)共同维护,只会将个人认为比较<span style="color: red;">重要</span>,或者官方文档<span style="color: red;">没有写</span>的内容放进来,如果文中<span style="color: red;">有错误</span>或<span style="color: red;">你有补充</span>可以在频道@我们进行<span style="color: red;">添加&#x2F;修改</span></p>
+<p>本文由<mark class="hl-label orange">@有问题自觉看新人必看文档</mark>频道ID),<mark class="hl-label orange">@The End</mark>(频道ID),<mark class="hl-label orange">@璨梦踏月-JOYUI13-5.10</mark>(频道ID)共同维护,只会将个人认为比较<span style="color: red;">重要</span>,或者官方文档<span style="color: red;">没有写</span>的内容放进来,如果文中<span style="color: red;">有错误</span>或<span style="color: red;">你有补充</span>可以在频道@我们进行<span style="color: red;">添加&#x2F;修改</span></p>
 <p><strong>转载自腾讯文档:</strong> <a href="https://docs.qq.com/doc/DS0hGeUppQmFyWW5X">NoActive新人必看</a>,<del><a href="https://docs.qq.com/doc/DS05PalBZbFR6cEdB">NoActive进阶文档</a></del> (略微更改了一些内容&#x2F;格式<del>,进阶文档还没迁移过来</del>)</p>
 <p>封面来自: <a href="https://www.coolapk.com/feed/57006904?shareKey=NzNiMjExZmM3MWVkNjc3MTViMTg~&shareUid=26757217&shareFrom=com.coolapk.market_13.3.6">Starrhymelodge的酷安</a></p>
-<p><span style="background-color: yellow;">目录在右侧(没看到就往下翻,手机端在右下角有目录按钮)</span>,如果你认为界面其他元素打扰了阅读可在右下角设置中开启<strong>阅读模式</strong>,也可进行<strong>深色模式切换</strong>以及<strong>单栏&#x2F;双栏切换</strong></p>
+<p>如果你认为界面其他元素打扰了阅读可在右下角设置中开启<strong>阅读模式</strong>,也可进行<strong>深色模式切换</strong>以及<strong>单栏&#x2F;双栏切换</strong></p>
 <p><strong>官方文档链接：</strong><a href="https://app.myflv.cn/"><strong>查看链接</strong></a></p>
 <p><strong>官方下载站链接：</strong><a href="https://bzmshang.top/J/down.app.myflv.cn"><strong>查看链接</strong></a></p>
-<div class="note warning no-icon modern"><p>目录可以帮你快速找到解答，如果你的问题在新入必看文档中无法得到解答，可以带着详细描述与相关截图到频道内进行询问，或尝试查看<a class="btn-beautify outline blue larger" href="https://docs.qq.com/doc/DS05PalBZbFR6cEdB" title="进阶文档"><i class="far fa-hand-point-right"></i><span>进阶文档</span></a>寻找答案</p>
+<div class="note warning no-icon modern"><p>目录可以帮你快速找到解答，<mark class="hl-label orange">目录在右侧(没看到就往下翻,手机端在右下角有目录按钮)</mark>,如果你的问题在新入必看文档中无法得到解答，可以带着详细描述与相关截图到频道内进行询问，或尝试查看<a class="btn-beautify outline blue larger" href="https://docs.qq.com/doc/DS05PalBZbFR6cEdB" title="进阶文档"><i class="far fa-hand-point-right"></i><span>进阶文档</span></a>寻找答案</p>
 </div>
 
-<div style="background-color: #FFFACD; padding: 10px; border-radius: 5px;">
-目录可以帮你快速找到解答，如果你的问题在新入必看文档中无法得到解答，可以带着详细描述与相关截图到频道内进行询问，或尝试查看<a href="https://docs.qq.com/doc/DS05PalBZbFR6cEdB">进阶文档</a>寻找答案
-</div>
 
 <hr>
 <h1 id="NoActive简介"><a href="#NoActive简介" class="headerlink" title="NoActive简介"></a><strong>NoActive简介</strong></h1><ol>
 <li><p>Noa只是单纯的墓碑模块，与任何墓碑与墓碑相关的模块都会与之产生冲突。  </p>
-<div style="background-color: #FFFACD; padding: 10px; border-radius: 5px;">
-墓碑作用：通过冻结的方式降低后台应用的CPU使用率，让更多的CPU能被前台应用使用，从而让前台应用更流畅<br><br>
-在不保留大量后台的情况下，使不使用墓碑基本上是无感的，在某些时候，甚至不如不使用墓碑模块<br><br>
-在某些地方，你会看到使用墓碑可以更省电的或类似的话，这类话出现的原因大概为：后台消耗的CPU降低了，电就省下来了。事实上靠墓碑省电的效果微乎其微，墓碑最大的作用就是在内存高压状态下尽可能保持前台应用使用的流畅
+<div class="note warning no-icon modern"><p>墓碑作用：通过冻结的方式降低后台应用的CPU使用率，让更多的CPU能被前台应用使用，从而让前台应用更流畅<br><br>在不保留大量后台的情况下，使不使用墓碑基本上是无感的，在某些时候，甚至不如不使用墓碑模块<br><br>在某些地方，你会看到使用墓碑可以更省电的或类似的话，这类话出现的原因大概为：后台消耗的CPU降低了，电就省下来了。事实上靠墓碑省电的效果微乎其微，墓碑最大的作用就是在内存高压状态下尽可能保持前台应用使用的流畅</p>
 </div>
 </li>
 <li><p>任何可以使用Lsposed框架，可以正常授权Root的Root管理器都可以正常使用Noactive  <br><br></p>

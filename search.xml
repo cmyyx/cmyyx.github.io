@@ -5,7 +5,7 @@
     <url>//NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div align='center' ><font size='70'>NoActive新人必看文档</font></div>
 
-<div class="note danger no-icon flat"><p>此文档已放弃维护,同时深色模式下可能存在问题</p>
+<div class="note danger no-icon flat"><p><span style="color: red;">此文档已放弃维护,同时深色模式下可能存在问题</span></p>
 </div>
 
 

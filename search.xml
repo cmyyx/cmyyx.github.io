@@ -12,7 +12,7 @@
 
 
 
-<p>本文由<mark class="hl-label orange">@有问题自觉看新人必看文档</mark>频道ID),<mark class="hl-label orange">@The End</mark>(频道ID),<mark class="hl-label orange">@璨梦踏月-JOYUI13-5.10</mark>(频道ID)共同维护,只会将个人认为比较<span style="color: red;">重要</span>,或者官方文档<span style="color: red;">没有写</span>的内容放进来,如果文中<span style="color: red;">有错误</span>或<span style="color: red;">你有补充</span>可以在频道@我们进行<span style="color: red;">添加&#x2F;修改</span></p>
+<p>本文由<mark class="hl-label purple">@有问题自觉看新人必看文档</mark>频道ID),<mark class="hl-label purple">@The End</mark>(频道ID),<mark class="hl-label purple">@璨梦踏月-JOYUI13-5.10</mark>(频道ID)共同维护,只会将个人认为比较<span style="color: red;">重要</span>,或者官方文档<span style="color: red;">没有写</span>的内容放进来,如果文中<span style="color: red;">有错误</span>或<span style="color: red;">你有补充</span>可以在频道@我们进行<span style="color: red;">添加&#x2F;修改</span></p>
 <p><strong>转载自腾讯文档:</strong> <a href="https://docs.qq.com/doc/DS0hGeUppQmFyWW5X">NoActive新人必看</a>,<del><a href="https://docs.qq.com/doc/DS05PalBZbFR6cEdB">NoActive进阶文档</a></del> (略微更改了一些内容&#x2F;格式<del>,进阶文档还没迁移过来</del>)</p>
 <p>封面来自: <a href="https://www.coolapk.com/feed/57006904?shareKey=NzNiMjExZmM3MWVkNjc3MTViMTg~&shareUid=26757217&shareFrom=com.coolapk.market_13.3.6">Starrhymelodge的酷安</a></p>
 <p>如果你认为界面其他元素打扰了阅读可在右下角设置中开启<strong>阅读模式</strong>,也可进行<strong>深色模式切换</strong>以及<strong>单栏&#x2F;双栏切换</strong></p>
@@ -31,64 +31,51 @@
 <li><p>任何可以使用Lsposed框架，可以正常授权Root的Root管理器都可以正常使用Noactive  <br><br></p>
 </li>
 <li><p>Noactive是一个独立的Xposed墓碑模块  </p>
-<div style="background-color: #FFFACD; padding: 10px; border-radius: 5px;">
-  工作方法并不是建立于系统的墓碑，理论上任何拥有Lsposed的安卓系统都可以正常使用Noactive
-  <span style="color: red;">（第三方系统/内核使用出现问题请不要反馈）</span>
-  <br><br>
-  你并不需要调整开发者选项内的某些设置，Noactive工作不依赖也从未依赖过这些设置
+<div class="note warning no-icon modern"><p>工作方法并不是建立于系统的墓碑，理论上任何拥有Lsposed的安卓系统都可以正常使用Noactive<span style="color: red;">（第三方系统&#x2F;内核使用出现问题请不要反馈）</span> <br><br></p>
+<p>你并不需要调整开发者选项内的某些设置，Noactive工作不依赖也从未依赖过这些设置</p>
 </div>
 </li>
 <li><p>Noactive不管省电，只保证前台流畅性  </p>
-<div style="background-color: #FFFACD; padding: 10px; border-radius: 5px;">
-由于应用被冻结后依然会占用物理内存，而高内存占用必然带来额外耗电及卡顿，包括但不限于频繁的解压缩物理内存至Zram/Swap，或者频繁切换前台导致的内存压力增大，都会影响流畅度和耗电
-  <br><br>
-如果你觉得使用Noactive之后变得更加耗电，请做好严格的变量控制。如果真的是这样，你可以选择停止使用Noactive。
+<div class="note warning no-icon modern"><p>由于应用被冻结后依然会占用物理内存，而高内存占用必然带来额外耗电及卡顿，包括但不限于频繁的解压缩物理内存至Zram&#x2F;Swap，或者频繁切换前台导致的内存压力增大，都会影响流畅度和耗电<br><br></p>
+<p>如果你觉得使用Noactive之后变得更加耗电，请做好严格的变量控制。如果真的是这样，你可以选择停止使用Noactive。</p>
 </div>
 </li>
 <li><p>Noactive与系统杀后台并没有直接的关联  </p>
-<div style="background-color: #FFFACD; padding: 10px; border-radius: 5px;">
-如果你发现应用经常重新加载，请确定应用是被杀了还是因为<span style="color: red;">没有Binder而重载</span>。如果是因为没有Binder而重载，你可以选择使用Re-kernel<br><br>
-binder注释点击<a href="https://docs.qq.com/doc/DWG5HUUx5UGREd0ti">跳转到名词解读</a><br><br>
-Re-kernel说明点击<a href="#Re-kernel">跳转到Re-kernel部分</a>
+<div class="note warning no-icon modern"><p>如果你发现应用经常重新加载，请确定应用是被杀了还是因为<span style="color: red;">没有Binder而重载</span>。如果是因为没有Binder而重载，你可以选择使用Re-kernel<br><br></p>
+<p>Binder注释点击<a class="btn-beautify outline blue larger" href="https://docs.qq.com/doc/DWG5HUUx5UGREd0ti" title="跳转到名词解读"><i class="far fa-hand-point-right"></i><span>跳转到名词解读</span></a> <br><br></p>
+<p>Re-kernel说明点击<a class="btn-beautify outline blue larger" href="#Re-kernel" title="跳转到Re-kernel"><i class="far fa-hand-point-right"></i><span>跳转到Re-kernel</span></a></p>
 </div>
 </li>
 <li><p>3x版Noactive并没有配置进程功能  </p>
-<div style="background-color: #FFFACD; padding: 10px; border-radius: 5px;">
-由于应用的部分进程未冻结，可能会与冻结进程进行Binder通信，导致应用产生很多未知问题<br><br>
-而杀死进程每次在应用后台后杀死，再次打开时会重新启动，反反复复杀死进程的开销更大<br><br>
-所以NoActive设计上是整体冻结应用，不会支持白名单进程，也不会支持杀死进程
-</div></li>
+<div class="note warning no-icon modern"><p>由于应用的部分进程未冻结，可能会与冻结进程进行Binder通信，导致应用产生很多未知问题<br><br><br>而杀死进程每次在应用后台后杀死，再次打开时会重新启动，反反复复杀死进程的开销更大<br><br><br>所以NoActive设计上是整体冻结应用，不会支持白名单进程，也不会支持杀死进程</p>
+</div>
+</li>
 <li><p>Noactive冻结后应用会断网  </p>
-<div style="background-color: #FFFACD; padding: 10px; border-radius: 5px;">
-如果你发现冻结后应用断网了，影响了某个APP的使用，你可以给予白名单，或停止使用Noactive，冻结QQ后，再打开QQ，消息加载慢很可能是因为这个</div>
+<div class="note warning no-icon modern"><p>如果你发现冻结后应用断网了，影响了某个APP的使用，你可以给予白名单，或停止使用Noactive，冻结QQ后，再打开QQ，消息加载慢很可能是因为这个</p>
+</div>
 </li>
 <li><p>Noactive冻结的是带<span style="color: red;">应用uid的系统&#x2F;三方应用</span>，且对于具备系统签名的应用默认白名单，Noactive<span style="color: red;">不会冻结或者休眠不具备uid的进程</span>  </p>
-<div style="background-color: #FFFACD; padding: 10px; border-radius: 5px;">
-至于某充电模块，Noactive与你的模块<span style="color: red;">不存在任何冲突</span>，请不要再宣传这一概念然后让用户来这里反馈bug，毫无意义，且浪费开发者的时间
+<div class="note warning no-icon modern"><p>至于某充电模块，Noactive与你的模块<span style="color: red;">不存在任何冲突</span>，请不要再宣传这一概念然后让用户来这里反馈bug，毫无意义，且浪费开发者的时间</p>
 </div></li>
 </ol>
 <hr>
 <h2 id="关于版本号"><a href="#关于版本号" class="headerlink" title="关于版本号"></a>关于版本号</h2><p>例:2.x；3.x</p>
 <ol>
-<li><span style="background-color: yellow;">最前面的数字代表的是大版本</span>，例如第二代Noa,第三代Noa<br></li>
+<li><mark class="hl-label orange">最前面的数字代表的是大版本</mark>，例如第二代Noa,第三代Noa
+<br></li>
 <li>后面的x代表的是小版本号，2x版本最终停留在了2.9，3x版本目前是3.9，还在更新中，</li>
 </ol>
 <p>2x支持的安卓版本: 11-13</p>
 <p>3x支持的安卓版本: 12-15</p>
-<div style="background-color: #FFFACD; padding: 10px; border-radius: 5px;">
-停更的正式版及最后一个免费版3.3pro<span style="color: red;">不支持Android15</span>，所以别再问为什么用不了了
-<br><br>
-Pro版自 3.9Pro-185 支持Android15
+<div class="note warning no-icon modern"><p>停更的正式版及最后一个免费版3.3pro<span style="color: red;">不支持Android15</span>，所以别再问为什么用不了了<br><br><br><br>Pro版自 3.9Pro-185 支持Android15</p>
 </div>
+
 <br>
 
-<p>在此之外，你还会在<span style="color: green;">【公告】NoA-Pro </span>看到版本更新写着PRO-xxx，这里的xxx代表着小小版本号，正常更新为小小版本号迭代，小小版本号不会在Noactive的当前版本与系统中写出来，除非架构升级才会升级小版本号，想查看到自己使用的Noactive小小版本号需要去Noactive中的日记查看<br><br><br>据<span style="color: purple;">@myflavor </span>所说，这样做是为了方便降级</p>
-<div style="background-color: #FFFACD; padding: 10px; border-radius: 5px;">注：<br>
-3.9Pro-172之前版本＆免费版的Noactive文件配置目录为/data/system/NoActive<br>
-3.9Pro-172之后版本的Noactive文件配置目录为/data/system/NoActive_xxxxxxxx（8位随机字符）<br>
-所以<span style="background-color: yellow;">跨大版本号升级/降级Noactive都需要去mt管理器卸载noa的文件目录
-</span>
+<p>在此之外，你还会在<span style="color: green;">【公告】NoA-Pro </span>看到版本更新写着PRO-xxx，这里的xxx代表着小小版本号，正常更新为小小版本号迭代，小小版本号不会在Noactive的当前版本与系统中写出来，除非架构升级才会升级小版本号，想查看到自己使用的Noactive小小版本号需要去Noactive中的日记查看<br><br><br>据<mark class="hl-label purple">@myflavor</mark>所说，这样做是为了方便降级</p>
+<div class="note warning no-icon modern"><p>注：<br><br>3.9Pro-172之前版本＆免费版的Noactive文件配置目录为&#x2F;data&#x2F;system&#x2F;NoActive<br><br>3.9Pro-172之后版本的Noactive文件配置目录为&#x2F;data&#x2F;system&#x2F;NoActive_xxxxxxxx（8位随机字符）<br><br>所以<mark class="hl-label orange">跨大版本号升级&#x2F;降级Noactive都需要去mt管理器卸载noa的文件目录</mark></p>
 </div>
+
 
 
 <hr>

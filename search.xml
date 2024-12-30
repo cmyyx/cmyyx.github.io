@@ -5,7 +5,7 @@
     <url>//NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div align='center' ><font size='70'>NoActive新人必看文档</font></div>
 
-<p>本文由<span style="background-color: yellow;">@有问题自觉看新人必看文档(频道ID),@The End(频道ID),@璨梦踏月-JOYUI13-5.10(频道ID)</span>共同维护,只会将个人认为比较<span style="color: red;">重要</span>,或者官方文档<span style="color: red;">没有写</span>的内容放进来,如果文中<span style="color: red;">有错误</span>或<span style="color: red;">你有补充</span>可以在频道@我们进行<span style="color: red;">添加&#x2F;修改</span></p>
+<p>本文由<span style="background-color: yellow;">@有问题自觉看新人必看文档</span>(频道ID),<span style="background-color: yellow;">@The End</span>(频道ID),<span style="background-color: yellow;">@璨梦踏月-JOYUI13-5.10</span>(频道ID)共同维护,只会将个人认为比较<span style="color: red;">重要</span>,或者官方文档<span style="color: red;">没有写</span>的内容放进来,如果文中<span style="color: red;">有错误</span>或<span style="color: red;">你有补充</span>可以在频道@我们进行<span style="color: red;">添加&#x2F;修改</span></p>
 <p><strong>转载自腾讯文档:</strong> <a href="https://docs.qq.com/doc/DS0hGeUppQmFyWW5X">NoActive新人必看</a>,<del><a href="https://docs.qq.com/doc/DS05PalBZbFR6cEdB">NoActive进阶文档</a></del> (略微更改了一些内容&#x2F;格式<del>,进阶文档还没迁移过来</del>)</p>
 <p>封面来自: <a href="https://www.coolapk.com/feed/57006904?shareKey=NzNiMjExZmM3MWVkNjc3MTViMTg~&shareUid=26757217&shareFrom=com.coolapk.market_13.3.6">Starrhymelodge的酷安</a></p>
 <p><span style="background-color: yellow;">目录在右侧(没看到就往下翻,手机端在右下角有目录按钮)</span>,如果你认为界面其他元素打扰了阅读可在右下角设置中开启<strong>阅读模式</strong>,也可进行<strong>深色模式切换</strong>以及<strong>单栏&#x2F;双栏切换</strong></p>
@@ -134,7 +134,7 @@ PRO版下载密码会发在<span style="color: green;">[公告]Noa-Pro</span></d
 <p><img src="/NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/%E6%BF%80%E6%B4%BB%E7%A0%81%E8%AF%B4%E6%98%8E1.png" alt="激活码说明1"></p>
 <p><img src="/NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/%E6%BF%80%E6%B4%BB%E7%A0%81%E8%AF%B4%E6%98%8E2.png" alt="激活码说明2"></p>
 <ol start="2">
-<li>2024年2月18号后捐赠，默认1个激活码10RMB<br>  如果出现设备数量达到上线，将面临2个选择</li>
+<li>2024年2月18号后捐赠，默认1个激活码10RMB<br> 如果出现设备数量达到上线，将面临2个选择</li>
 </ol>
 <p>  2.1 想同时激活  </p>
 <p>  需要捐赠多10r，然后把截图和邮箱发<span style="color: green;">【反馈】NoActive</span>并<span style="color: purple;">@myflavor </span>，告知他又捐赠了  </p>
@@ -182,8 +182,9 @@ Zygisk-Tweaker与Zygisk-Next<span style="color: red;">疑似存在兼容性的�
 <p>打开Noactive的设置页面，”当前版本“这一项会显示“未激活”，点击“未激活”，之后会出现输入激活码的UI，将你的激活码输入，然后重启即可正常使用</p>
 <div style="background-color: #FFFACD; padding: 10px; border-radius: 5px;">如果遇到”激活出错”请排查你的网络问题和模块<br>
 如果遇到“激活设备达到上线”点击<a href="#激活码的说明">跳转到激活码的说明</a><br>
-如果使用了会<span style="color: red;">更改设备id，序列号之类的模块，脚本请勿激活</span>，否则重启之后会显示未激活，当你不小心使用了会更改设备id，序列号之类的模块，脚本，并且不小心激活了，记得关了，然后点击<a href="#激活码的说明">跳转到激活码的说明<</a>
+如果使用了会<span style="color: red;">更改设备id，序列号之类的模块，脚本请勿激活</span>，否则重启之后会显示未激活，当你不小心使用了会更改设备id，序列号之类的模块，脚本，并且不小心激活了，记得关了，然后点击<a href="#激活码的说明">跳转到激活码的说明</a>
 </div>
+
 
 
 

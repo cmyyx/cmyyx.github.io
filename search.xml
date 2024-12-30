@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>NoActive进阶文档</title>
+    <url>//NoActive%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div align='center' ><font size='70'>NoActive进阶文档</font></div>
+
+<div class="note danger modern"><p>前方正在施工中, 稍后再来探索吧~</p>
+</div>
+]]></content>
+      <tags>
+        <tag>NoActive</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>NoActive新人必看文档</title>
     <url>//NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div align='center' ><font size='70'>NoActive新人必看文档</font></div>
@@ -12,7 +24,7 @@
 
 
 
-<p>本文由<mark class="hl-label purple">@有问题自觉看新人必看文档</mark>频道ID),<mark class="hl-label purple">@The End</mark>(频道ID),<mark class="hl-label purple">@璨梦踏月-JOYUI13-5.10</mark>(频道ID)共同维护,只会将个人认为比较<span style="color: red;">重要</span>,或者官方文档<span style="color: red;">没有写</span>的内容放进来,如果文中<span style="color: red;">有错误</span>或<span style="color: red;">你有补充</span>可以在频道@我们进行<span style="color: red;">添加&#x2F;修改</span></p>
+<p>本文由<mark class="hl-label purple">@有问题自觉看新人必看文档</mark>(频道ID),<mark class="hl-label purple">@The End</mark>(频道ID),<mark class="hl-label purple">@璨梦踏月-JOYUI13-5.10</mark>(频道ID)共同维护,只会将个人认为比较<span style="color: red;">重要</span>,或者官方文档<span style="color: red;">没有写</span>的内容放进来,如果文中<span style="color: red;">有错误</span>或<span style="color: red;">你有补充</span>可以在频道@我们进行<span style="color: red;">添加&#x2F;修改</span></p>
 <p><strong>转载自腾讯文档:</strong> <a href="https://docs.qq.com/doc/DS0hGeUppQmFyWW5X">NoActive新人必看</a>,<del><a href="https://docs.qq.com/doc/DS05PalBZbFR6cEdB">NoActive进阶文档</a></del> (略微更改了一些内容&#x2F;格式<del>,进阶文档还没迁移过来</del>)</p>
 <p>封面来自: <a href="https://www.coolapk.com/feed/57006904?shareKey=NzNiMjExZmM3MWVkNjc3MTViMTg~&shareUid=26757217&shareFrom=com.coolapk.market_13.3.6">Starrhymelodge的酷安</a></p>
 <p>如果你认为界面其他元素打扰了阅读可在右下角设置中开启<strong>阅读模式</strong>,也可进行<strong>深色模式切换</strong>以及<strong>单栏&#x2F;双栏切换</strong></p>
@@ -559,18 +571,6 @@
 <hr>
 <h2 id="单应用定时解冻"><a href="#单应用定时解冻" class="headerlink" title="单应用定时解冻"></a>单应用定时解冻</h2><div class="note warning no-icon modern"><p>给应用绑定一个单独的定时器，时间到了解冻该应用。效果也好，但是会略微增加功耗</p>
 <p> 仅noactive-2.0拥有这种解冻方式，该解冻方式虽然不如binder解冻，但能与轮番解冻形成互补</p>
-</div>
-]]></content>
-      <tags>
-        <tag>NoActive</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>NoActive进阶文档</title>
-    <url>//NoActive%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div align='center' ><font size='70'>NoActive进阶文档</font></div>
-
-<div class="note danger modern"><p>前方正在施工中, 稍后再来探索吧~</p>
 </div>
 ]]></content>
       <tags>

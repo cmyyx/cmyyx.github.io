@@ -3,12 +3,12 @@
   <entry>
     <title>NoActive新人必看文档</title>
     <url>//NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>转载自腾讯文档:</strong> <a href="https://docs.qq.com/doc/DS0hGeUppQmFyWW5X">NoActive新人必看</a>,<a href="https://docs.qq.com/doc/DS05PalBZbFR6cEdB">NoActive进阶文档</a> (略微更改了一些内容&#x2F;格式)</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div align='center' ><font size='70'>NoActive新人必看文档</font></div>
+
+<p>本文由<span style="background-color: yellow;">@有问题自觉看新人必看文档(频道ID),@The End(频道ID),@璨梦踏月-JOYUI13-5.10(频道ID)</span>共同维护,只会将个人认为比较<span style="color: red;">重要</span>,或者官方文档<span style="color: red;">没有写</span>的内容放进来,如果文中<span style="color: red;">有错误</span>或<span style="color: red;">你有补充</span>可以在频道@我们进行<span style="color: red;">添加&#x2F;修改</span></p>
+<p><strong>转载自腾讯文档:</strong> <a href="https://docs.qq.com/doc/DS0hGeUppQmFyWW5X">NoActive新人必看</a>,<del><a href="https://docs.qq.com/doc/DS05PalBZbFR6cEdB">NoActive进阶文档</a></del> (略微更改了一些内容&#x2F;格式<del>,进阶文档还没迁移过来</del>)</p>
 <p>封面来自: <a href="https://www.coolapk.com/feed/57006904?shareKey=NzNiMjExZmM3MWVkNjc3MTViMTg~&shareUid=26757217&shareFrom=com.coolapk.market_13.3.6">Starrhymelodge的酷安</a></p>
 <p><span style="background-color: yellow;">目录在右侧(没看到就往下翻,手机端在右下角有目录按钮)</span>,如果你认为界面其他元素打扰了阅读可在右下角设置中开启<strong>阅读模式</strong>,也可进行<strong>深色模式切换</strong>以及<strong>单栏&#x2F;双栏切换</strong></p>
-<div align='center' ><font size='70'>NoActive新人必看文档</font></div>
-
-<p>本文只会将<span style="color: red;">个人认为比较重要，或者官方文档没有写</span>的东西放进来，如果你有补充,或发现错误，有哪里看不懂都可以在频道私聊我<span style="background-color: yellow;">@有问题自觉看新人必看文档（频道ID）</span>进行添加&#x2F;修改，提问<br>由<span style="background-color: yellow;">@The End（频道ID）</span>进行二次排版与更新，如果你有什么问题或建议，也可@我进行添加&#x2F;修改</p>
 <p><strong>官方文档链接：</strong><a href="https://app.myflv.cn/"><strong>查看链接</strong></a></p>
 <p><strong>官方下载站链接：</strong><a href="https://bzmshang.top/J/down.app.myflv.cn"><strong>查看链接</strong></a></p>
 <div style="background-color: #FFFACD; padding: 10px; border-radius: 5px;">
@@ -153,11 +153,13 @@ PRO版下载密码会发在<span style="color: green;">[公告]Noa-Pro</span></d
 Zygisk-Tweaker与Zygisk-Next<span style="color: red;">疑似存在兼容性的问题</span>，同时使用<span style="color: red;">可能</span>会发生卡第二屏的现象。<br>
 使用Zygisk-Tweaker对应用进行配置后，会<span style="color: red;">泄露Zygisk被配置的应用检测到</span>。<br>
 下载链接：<a href="https://www.coolapk.com/feed/51335047">查看链接</a>
-</div>
-3. 刷机的，只要没改变设备ID就可以继续使用激活码，如果不能重新使用，点击<a href="#激活码的说明">跳转到激活码的说明</a>解决（自己重新激活看看能不能激活成功就知道了，谁都不知道你刷的什么，没人能明确回答你）。
+</div><br><br>
 
-<ol start="4">
-<li>如果激活码丢失了，可以去<span style="color: green;">［公告］NoA-Pro</span>的精华消息一栏找到激活码找回网址，进行激活码的找回</li>
+<ol start="3">
+<li><p>刷机的，只要没改变设备ID就可以继续使用激活码，如果不能重新使用，点击<a href="#激活码的说明">跳转到激活码的说明</a>解决（自己重新激活看看能不能激活成功就知道了，谁都不知道你刷的什么，没人能明确回答你）。</p>
+</li>
+<li><p>如果激活码丢失了，可以去<span style="color: green;">［公告］NoA-Pro</span>的精华消息一栏找到激活码找回网址，进行激活码的找回</p>
+</li>
 </ol>
 <div style="background-color: #FFFACD; padding: 10px; border-radius: 5px;">注：<br>
 进了身份组频道就别退了，Noactive大多数东西，例如更改后的密码，更新的公告，都是在频道发布，你退出频道之后，身份组也会跟着丢失，付款后7天内退出又重新加入频道，有一次机会可拉回身份组，7天后则需重新捐赠走流程
@@ -180,8 +182,9 @@ Zygisk-Tweaker与Zygisk-Next<span style="color: red;">疑似存在兼容性的�
 <p>打开Noactive的设置页面，”当前版本“这一项会显示“未激活”，点击“未激活”，之后会出现输入激活码的UI，将你的激活码输入，然后重启即可正常使用</p>
 <div style="background-color: #FFFACD; padding: 10px; border-radius: 5px;">如果遇到”激活出错”请排查你的网络问题和模块<br>
 如果遇到“激活设备达到上线”点击<a href="#激活码的说明">跳转到激活码的说明</a><br>
-如果使用了会<span style="color: red;">更改设备id，序列号之类的模块，脚本请勿激活</span>，否则重启之后会显示未激活，当你不小心使用了会更改设备id，序列号之类的模块，脚本，并且不小心激活了，记得关了，然后查看<a href="#激活码的说明">点击跳转到激活码的说明<</a>
+如果使用了会<span style="color: red;">更改设备id，序列号之类的模块，脚本请勿激活</span>，否则重启之后会显示未激活，当你不小心使用了会更改设备id，序列号之类的模块，脚本，并且不小心激活了，记得关了，然后点击<a href="#激活码的说明">跳转到激活码的说明<</a>
 </div>
+
 
 
 <p>如果你想获得更好的使用体验，可以考虑开启后台优化与内存优化（后台优化与内存优化默认不开启）<br><br>即解锁NoActive完全体</p>

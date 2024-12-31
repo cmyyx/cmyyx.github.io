@@ -222,7 +222,7 @@
 <p>如果你认为界面其他元素打扰了阅读可在右下角设置中开启<strong>阅读模式</strong>,也可进行<strong>深色模式切换</strong>以及<strong>单栏&#x2F;双栏切换</strong></p>
 <p><strong>官方文档链接：</strong><a href="https://app.myflv.cn/"><strong>查看链接</strong></a></p>
 <p><strong>官方下载站链接：</strong><a href="https://bzmshang.top/J/down.app.myflv.cn"><strong>查看链接</strong></a></p>
-<div class="note warning no-icon modern"><p>目录可以帮你快速找到解答，<mark class="hl-label orange">目录在右侧(没看到就往下翻,手机端在右下角有目录按钮)</mark>,如果你的问题在新入必看文档中无法得到解答，可以带着详细描述与相关截图到频道内进行询问，或尝试查看<a class="btn-beautify outline blue larger" href="https://docs.qq.com/doc/DS05PalBZbFR6cEdB" title="进阶文档"><i class="far fa-hand-point-right"></i><span>进阶文档</span></a>寻找答案</p>
+<div class="note warning no-icon modern"><p>目录可以帮你快速找到解答，<mark class="hl-label orange">目录在右侧(没看到就往下翻,手机端在右下角有目录按钮)</mark>,如果你的问题在新入必看文档中无法得到解答，可以带着详细描述与相关截图到频道内进行询问，或尝试查看<a class="btn-beautify orange larger" href="/../NoActive%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3" title="进阶文档"><i class="far fa-hand-point-right"></i><span>进阶文档</span></a>寻找答案</p>
 </div>
 
 <div class="note warning flat"><p>类似于<a class="btn-beautify outline blue larger" href="#常见问题解答" title="跳转到常见问题解答"><i class="far fa-hand-point-right"></i><span>跳转到常见问题解答</span></a>的页内跳转锚点偶尔会失效!请手动查找目录或再次点击</p>
@@ -249,7 +249,7 @@
 </li>
 <li><p>NoActive与系统杀后台并没有直接的关联  </p>
 <div class="note warning no-icon modern"><p>如果你发现应用经常重新加载，请确定应用是被杀了还是因为<span style="color: red;">没有Binder而重载</span>。如果是因为没有Binder而重载，你可以选择使用Re-kernel<br><br></p>
-<p>Binder注释点击<a class="btn-beautify outline blue larger" href="#名词解读与进阶文档" title="跳转到名词解读与进阶文档"><i class="far fa-hand-point-right"></i><span>跳转到名词解读与进阶文档</span></a> <br><br></p>
+<p>Binder注释点击<a class="btn-beautify blue larger" href="/../%E5%90%8D%E8%AF%8D%E8%A7%A3%E8%AF%BB" title="查看名词解读"><i class="far fa-hand-point-right"></i><span>查看名词解读</span></a> <br><br></p>
 <p>Re-kernel说明点击<a class="btn-beautify outline blue larger" href="#Re-kernel" title="跳转到Re-kernel"><i class="far fa-hand-point-right"></i><span>跳转到Re-kernel</span></a></p>
 </div>
 </li>
@@ -552,7 +552,7 @@
 </div>
 
 
-<p>设置FCM解冻相关请查看：<a class="btn-beautify outline blue larger" href="https://docs.qq.com/doc/DS05PalBZbFR6cEdB" title="NoActive进阶文档"><i class="far fa-hand-point-right"></i><span>NoActive进阶文档</span></a></p>
+<p>设置FCM解冻相关请查看：<a class="btn-beautify orange larger" href="/../NoActive%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3" title="进阶文档"><i class="far fa-hand-point-right"></i><span>进阶文档</span></a></p>
 <hr>
 <h2 id="在使用NoActive后Zygisk失效"><a href="#在使用NoActive后Zygisk失效" class="headerlink" title="在使用NoActive后Zygisk失效"></a>在使用NoActive后Zygisk失效</h2><p>据<mark class="hl-label purple">@后宫学长</mark>(频道ID)所说，这是因为你所用的<span style="color: red;">ROM的内核开了debug调试</span>，导致Zygisk莫名其妙的失效</p>
 <div class="note warning no-icon modern"><p>解决方法<br><br>1.使用163版本的NoActive，在此之后的所有版本均存在该问题<br><br>2.更换内核<span style="color: red;">（不确定是否可行，请自行测试）</span><br><br>3.更换系统ROM</p>
@@ -586,7 +586,7 @@
 <hr>
 <h2 id="内存优化"><a href="#内存优化" class="headerlink" title="内存优化"></a>内存优化</h2><p>开启后台优化后，在NoActive的设置中长按“当前版本”一栏即可开启内存优化，开启后NoActive最顶上会提示“<span style="color: red;">内存优化已开启，重启生效</span>”，之后重启即可</p>
 <p>开启此功能后，NoActive会在应用页面切换时检测设备的内存使用率。当可用内存低于设定的保留值时，NoActive会评估应用的后台留存时长。仅对于重要程度设置为低的应用，如果这些应用在长时间未回到前台的情况下，将会被清理。清理的顺序从最长时间未开启的应用到最近开启的应用，直到内存使用率回升至保留值以上时停止清理。</p>
-<div class="note warning no-icon modern"><p>从Pro-173开始，FCM临时解冻、Shell临时解冻、意图临时解冻、轮番解冻、UI设置白名单解冻、Binder解冻，都不会影响到OOM排序<br><br>注：<br><br><span style="color: red;">内存优化只有开启后台优化后才可使用</span><br><br><span style="color: red;">从Pro-173开始所有设备固定保留值为物理内存和虚拟内存的10%</span><br><br>如果你希望自定义，请查看：<a class="btn-beautify outline blue larger" href="https://docs.qq.com/doc/DS05PalBZbFR6cEdB" title="NoActive进阶文档"><i class="far fa-hand-point-right"></i><span>NoActive进阶文档</span></a></p>
+<div class="note warning no-icon modern"><p>从Pro-173开始，FCM临时解冻、Shell临时解冻、意图临时解冻、轮番解冻、UI设置白名单解冻、Binder解冻，都不会影响到OOM排序<br><br>注：<br><br><span style="color: red;">内存优化只有开启后台优化后才可使用</span><br><br><span style="color: red;">从Pro-173开始所有设备固定保留值为物理内存和虚拟内存的10%</span><br><br>如果你希望自定义，请查看：<a class="btn-beautify orange larger" href="/../NoActive%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3" title="进阶文档"><i class="far fa-hand-point-right"></i><span>进阶文档</span></a></p>
 </div>
 
 
@@ -611,7 +611,7 @@
 </div>
 
 <p>Re-kernel自v6.5增加了清理异步Binder的功能，可以大大减少Binder解冻，所以也可以选择刷入Re-kernel以获得更好的体验</p>
-<div class="note warning no-icon modern"><p>使用要求<br><br>内核大版本必须大于等于5.10（低于5.10请点击<a class="btn-beautify outline blue larger" href="#Re-kernel-KPM" title="跳转到Re-kernel-KPM"><i class="far fa-hand-point-right"></i><span>跳转到Re-kernel-KPM</span></a>）<br><br>目前已知Pandora内核，Marisa内核，OriginOS系统内核，HarmonyOS系统内核，较新魅族系统内核无法使用该版rekernel，请使用kpm版rekernel（点击<a class="btn-beautify outline blue larger" href="#Re-kernel-KPM" title="跳转到Re-kernel-KPM"><i class="far fa-hand-point-right"></i><span>跳转到Re-kernel-KPM</span></a>）<br><br><br>注：<br><br>移植包正常情况下是没有Binder通知的。关于闪弹，重载，卡屏的词语解释在<a class="btn-beautify outline blue larger" href="#名词解读与进阶文档" title="点击跳转到名词解读与进阶文档"><i class="far fa-hand-point-right"></i><span>点击跳转到名词解读与进阶文档</span></a></p>
+<div class="note warning no-icon modern"><p>使用要求<br><br>内核大版本必须大于等于5.10（低于5.10请点击<a class="btn-beautify outline blue larger" href="#Re-kernel-KPM" title="跳转到Re-kernel-KPM"><i class="far fa-hand-point-right"></i><span>跳转到Re-kernel-KPM</span></a>）<br><br>目前已知Pandora内核，Marisa内核，OriginOS系统内核，HarmonyOS系统内核，较新魅族系统内核无法使用该版rekernel，请使用kpm版rekernel（点击<a class="btn-beautify outline blue larger" href="#Re-kernel-KPM" title="跳转到Re-kernel-KPM"><i class="far fa-hand-point-right"></i><span>跳转到Re-kernel-KPM</span></a>）<br><br><br>注：<br><br>移植包正常情况下是没有Binder通知的。关于闪弹，重载，卡屏的词语解释在<a class="btn-beautify blue larger" href="/../%E5%90%8D%E8%AF%8D%E8%A7%A3%E8%AF%BB" title="名词解读"><i class="far fa-hand-point-right"></i><span>名词解读</span></a></p>
 </div>
 
 

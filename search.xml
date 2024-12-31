@@ -383,8 +383,9 @@
 <p><img src="/NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/%E6%BF%80%E6%B4%BB%E7%A0%81%E8%AF%B4%E6%98%8E8.png" alt="激活码说明8"></p>
 <hr>
 <h1 id="常见问题解答"><a href="#常见问题解答" class="headerlink" title="常见问题解答"></a>常见问题解答</h1><h2 id="需要使用的冻结模式"><a href="#需要使用的冻结模式" class="headerlink" title="需要使用的冻结模式"></a>需要使用的冻结模式</h2><p>根据内核判断，一般而言5.4及其往上使用v2，5.4以下使用v1或kill</p>
-<div style="background-color: #FFFACD; padding: 10px; border-radius: 5px;">对于部分厂商而言，4.19系内核且使用高通处理器的设备同样支持v2，这部分需要自行测试，或使用Tombed Monitor进行查看
+<div class="note warning no-icon modern"><p>对于部分厂商而言，4.19系内核且使用高通处理器的设备同样支持v2，这部分需要自行测试，或使用Tombed Monitor进行查看</p>
 </div>
+
 
 <p>如果不确定冻结模式选什么的可以下载Tombed Monitor查看，打开之后授权Root，然后点右上角感叹号就可以了</p>
 <p>下载链接：<a class="btn-beautify outline blue larger" href="https://coolapk.com/feed/48435014?shareKey=MjZkZTkzMzFjODc1NjYyYjA4ODU~&shareUid=22627121&shareFrom=com.coolapk.market_13.3.3" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>

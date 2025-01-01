@@ -223,12 +223,13 @@
 </ul>
 </li>
 </ol>
-<div class="note warning no-icon modern"><p>清除激活信息流程：<br><br>      1.把你需要清楚激活信息的邮箱发<span style="color: green;">【反馈】NoActive</span>并<mark class="hl-label purple">@myflavor</mark><br><br>       2.私聊<mark class="hl-label purple">@myflavor</mark>，提供清楚激活信息的理由与证据<br><br>      （例如：手机出售了，然后把出售截图发给他）</p>
+<div class="note warning no-icon modern"><p>清除激活信息流程：<br>用接收激活码的邮箱（领取激活码时发的邮箱）往<span style="color: purple;"><mark class="hl-label purple"><a href="mailto:&#97;&#100;&#109;&#105;&#110;&#x40;&#x31;&#x30;&#x30;&#49;&#55;&#x32;&#46;&#x78;&#x79;&#122;">&#97;&#100;&#109;&#105;&#110;&#x40;&#x31;&#x30;&#x30;&#49;&#55;&#x32;&#46;&#x78;&#x79;&#122;</a></mark> </span>发送邮件，邮件的主题为：清楚激活信息，邮箱的内容写清楚激活码的理由与证据<br>（例如：换手机了，再带上手机出售的截图）</p>
 </div>
 
 
 <p><img src="/NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/%E6%BF%80%E6%B4%BB%E7%A0%81%E8%AF%B4%E6%98%8E3.png" alt="激活码说明3"></p>
 <p><img src="/NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/%E6%BF%80%E6%B4%BB%E7%A0%81%E8%AF%B4%E6%98%8E4.png" alt="激活码说明4"></p>
+<p><img src="/NoActive%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3/%E6%A1%A3/%E6%BF%80%E6%B4%BB%E7%A0%81%E8%AF%B4%E6%98%8E5.jpg" alt="激活码说明5"></p>
 <div class="note warning no-icon modern"><p>注：<br><br>请注意，<span style="color: red;">刷入或关闭改主板ID，序列号，机型的模块</span>都会导致<span style="color: red;">NoActive激活失效</span>，使用该类型模块导致的激活失效，清除激活信息也会记录在3个月清除一次的记录内<br><br>如果你实在想对应用更改机型，可以考虑使用zygisk-Tweaker对应用进行配置更改机型， 或自行寻找能对应用单独改机型的模块修改。<br><br>Zygisk-Tweaker与Zygisk-Next<span style="color: red;">疑似存在兼容性的问题</span>，同时使用<span style="color: red;">可能</span>会发生卡第二屏的现象。<br><br>使用Zygisk-Tweaker对应用进行配置后，会<span style="color: red;">泄露Zygisk被配置的应用检测到</span>。<br><br>下载链接：<a class="btn-beautify outline blue larger" href="https://www.coolapk.com/feed/51335047" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
 </div>
 
@@ -243,12 +244,9 @@
 </div>
 
 
-<p><img src="/NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/%E6%BF%80%E6%B4%BB%E7%A0%81%E8%AF%B4%E6%98%8E5.png" alt="激活码说明5"></p>
 <p><img src="/NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/%E6%BF%80%E6%B4%BB%E7%A0%81%E8%AF%B4%E6%98%8E6.png" alt="激活码说明6"></p>
-<ol start="5">
-<li>激活码找回邮件的格式</li>
-</ol>
 <p><img src="/NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/%E6%BF%80%E6%B4%BB%E7%A0%81%E8%AF%B4%E6%98%8E7.png" alt="激活码说明7"></p>
+<p><img src="/NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/%E6%BF%80%E6%B4%BB%E7%A0%81%E8%AF%B4%E6%98%8E8.png" alt="激活码说明8"></p>
 <hr>
 <h2 id="激活码的使用"><a href="#激活码的使用" class="headerlink" title="激活码的使用"></a>激活码的使用</h2><p>前置：请先确保你刷入了<span style="color: red;">墓碑附加模块</span>并在<span style="color: red;">LSPosed中启用了NoActive</span>，完成这两步之后，打开NoActive UI，无提示弹出，即可进行下一步操作</p>
 <div class="note warning no-icon modern"><p>附加模块相关在<a class="btn-beautify outline blue larger %}<br>

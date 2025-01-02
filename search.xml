@@ -74,7 +74,7 @@
 </ol>
 <p>2x支持的安卓版本: 11-13</p>
 <p>3x支持的安卓版本: 12-15</p>
-<div class="note warning no-icon modern"><p>停更的正式版及最后一个免费版3.3pro<span style="color: red;">不支持Android15</span>，所以别再问为什么用不了了<br><br><br><br>Pro版自 3.9Pro-185 支持Android15</p>
+<div class="note warning no-icon modern"><p>停更的正式版及最后一个免费版3.3pro<span style="color: red;">不支持Android15</span>，所以别再问为什么用不了了<br><br><br>Pro版自 3.9Pro-185 支持Android15</p>
 </div>
 
 <br>
@@ -162,8 +162,9 @@
 <p><img src="/NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/%E6%BF%80%E6%B4%BB%E7%A0%81%E8%AF%B4%E6%98%8E8.png" alt="激活码说明8"></p>
 <hr>
 <h2 id="激活码的使用"><a href="#激活码的使用" class="headerlink" title="激活码的使用"></a>激活码的使用</h2><p>前置：请先确保你刷入了<span style="color: red;">墓碑附加模块</span>并在<span style="color: red;">LSPosed中启用了NoActive</span>，完成这两步之后，打开NoActive UI，无提示弹出，即可进行下一步操作</p>
-<div class="note warning no-icon modern"><p>附加模块相关在<a class="btn-beautify outline blue larger %}<br>
-如果一直UI内一直弹出“请刷入附加模块并在LSPosed中激活NoActive”，点击{% btn #UI内一直弹出提示“请刷入附加模块并在LSPosed中激活NoActive”'" href="#墓碑附加模块的介绍" title="点击跳转到墓碑附加模块的介绍"><i class="far fa-hand-point-right"></i><span>点击跳转到墓碑附加模块的介绍</span></a><br><br>获取激活码相关请点击<a class="btn-beautify outline blue larger" href="#如何正确的进行捐赠-重要" title="跳转到如何正确的进行捐赠-重要"><i class="far fa-hand-point-right"></i><span>跳转到如何正确的进行捐赠-重要</span></a></p>
+<div class="note warning no-icon modern"><p>附加模块相关在<a class="btn-beautify outline blue larger" href="#墓碑附加模块的介绍" title="点击跳转到墓碑附加模块的介绍"><i class="far fa-hand-point-right"></i><span>点击跳转到墓碑附加模块的介绍</span></a></p>
+<p>如果刷入墓碑附加模块，NoActive UI或日志依然提示说要安装附加模块的，点击<a class="btn-beautify outline blue larger" href="#UI内一直弹出提示“请刷入附加模块并在LSPosed中激活NoActive”" title="跳转到UI内一直弹出提示“请刷入附加模块并在LSPosed中激活NoActive"><i class="far fa-hand-point-right"></i><span>跳转到UI内一直弹出提示“请刷入附加模块并在LSPosed中激活NoActive</span></a> </p>
+<p>获取激活码相关请点击<a class="btn-beautify outline blue larger" href="#如何正确的进行捐赠-重要" title="跳转到如何正确的进行捐赠-重要"><i class="far fa-hand-point-right"></i><span>跳转到如何正确的进行捐赠-重要</span></a></p>
 </div>
 
 
@@ -266,9 +267,9 @@
 
 
 <hr>
-<h2 id="怎么查看日志"><a href="#怎么查看日志" class="headerlink" title="怎么查看日志"></a>怎么查看日志</h2><p>先从NoActive设置里查看你路径的输出方式(默认是框架，建议改成文件，改完需要重启)</p>
+<h2 id="怎么查看日志"><a href="#怎么查看日志" class="headerlink" title="怎么查看日志"></a>怎么查看日志</h2><p>先从NoActive设置里查看你路径的输出方式(默认是框架，建议改成文件)</p>
 <p>日志等级修改同样在NoActive设置中，一般来讲信息足矣，如果你需要反馈bug请使用<span style="color: red;">调试</span></p>
-<div class="note warning no-icon modern"><p>框架的输出路径在LSP的日志里<br><br><br>文件的输出路径在&#x2F;data&#x2F;system&#x2F;NoActive_xxxxxxxx&#x2F;的log文件与last.log文件里<br><br><span style="color: red;">log文件</span>记录的是你<span style="color: red;">当前的日志</span><br><br>last.log文件记录的是你最近一次重启前的日志<br><br><br>注：<br><br><del>改完文件输出路径需要重启才生效</del> <br><br>在新版本中是立即生效无需重启</p>
+<div class="note warning no-icon modern"><p>框架的输出路径在LSP的日志里<br><br><br>文件的输出路径在&#x2F;data&#x2F;system&#x2F;NoActive_xxxxxxxx&#x2F;的log文件与last.log文件里<br><br><span style="color: red;">log文件</span>记录的是你<span style="color: red;">当前的日志</span><br><br>last.log文件记录的是你最近一次重启前的日志<br><br><br>注：<br><br><del>改完文件输出路径需要重启才生效</del><br>在新版本中是立即生效无需重启</p>
 </div>
 
 

@@ -1,214 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>NoActive进阶文档</title>
-    <url>//NoActive%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div align='center' ><font size='70'>NoActive</font></div>
-<div align='center' ><font size='70'>进阶文档</font></div>
-
-<!-- <div class="note danger modern"><p>前方正在施工中, 稍后再来探索吧~</p>
-</div> -->
-
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><div class="note warning flat"><p>本文是为<mark class="hl-label orange">极客和有折腾精神的人</mark>所准备的进阶篇文档,大部分内容需要你自己动手实操，并且可能会出现包括但不限于以下几种情况：<span style="color: red;">手机变砖、出现发热与卡顿、环境异常等</span></p>
-</div>
-
-<p>如果你觉得本文有任何错误或需要补充的地方，可在频道<mark class="hl-label purple">@The End</mark>(频道ID)进行添加或修改</p>
-<div class="note red icon-padding flat"><i class="note-icon fa-solid fa-triangle-exclamation"></i><h1 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h1><div align='center' ><font size='4'>你所进行的一切行为均由你自己承担责任，别砖了过来找我，不会提供任何帮助，自己想办法</font></div>
-</div>
-
-<hr>
-<h1 id="Re-Kernel-KPM相关问题"><a href="#Re-Kernel-KPM相关问题" class="headerlink" title="Re-Kernel KPM相关问题"></a>Re-Kernel KPM相关问题</h1><p>KPM模块为Apatch独占（即Apatch管理器内核模块一栏），所以你需要刷入Apatch才能使用KPM版Re-Kernel<br><br></p>
-<hr>
-<h2 id="Apatch与其它Root方案共存"><a href="#Apatch与其它Root方案共存" class="headerlink" title="Apatch与其它Root方案共存"></a>Apatch与其它Root方案共存</h2><p>你需要两个东西：KernelPatch镜像与Apatch Apk</p>
-<p>KernelPatch：<a class="btn-beautify outline blue larger" href="https://github.com/bmax121/kernelpatch" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
-<p>Apatch：<a class="btn-beautify outline blue larger" href="https://github.com/bmax121/APatch" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
-<div class="note warning no-icon modern"><p>无论何时都只建议使用Release版本进行替换，Pre-Release或Github Ci构建的的版本可能导致不可知的问题</p>
-<p>以及，请务必使Apatch安装包的<span style="color: red;">原KernelPatch版本号与你要替换的版本号</span>对应，<span style="color: red;">不对应的版本号会不生效，同时有极大概率导致变砖</span>，一定注意</p>
-</div>
-
-<p>这里以Apatch 10763版本为例，下载对应的kpimg-linux</p>
-<p><img src="/NoActive%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3/%E5%85%B1%E5%AD%98.png" alt="共存"></p>
-<p>然后重命名kpimg-linux为kpimg，并替换掉Apatch Apk当中的kpimg</p>
-<div class="note warning no-icon modern"><p>kpimg在assets文件夹</p>
-</div>
-
-<p><img src="/NoActive%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3/%E5%85%B1%E5%AD%982.png" alt="共存"></p>
-<p>然后用Scene之类的工具提取你当前的boot.img，用你替换完的Apatch修补后再刷入boot.img</p>
-<div class="note warning no-icon modern"><p>VAB分区的设备你当前处于哪个分区就提取哪个，别搞错活动分区了</p>
-<p>例：A分区设备提取boot_a.img</p>
-</div>
-
-<p>至此，共存部分结束，重启后你会发现仅内核模块可用，Root授权和系统模块均不可用，这时就可以使用Re-Kernel KPM了</p>
-<div class="note warning no-icon modern"><p>只建议先加载，然后再使用嵌入，以防止出现内核不兼容导致的<span style="color: red;">卡开机</span>问题等</p>
-</div>
-
-<hr>
-<h2 id="用Apatch作为Root方案"><a href="#用Apatch作为Root方案" class="headerlink" title="用Apatch作为Root方案"></a>用Apatch作为Root方案</h2><p>流程与其它Root方案几乎一致</p>
-<p>Apatch Apk：<a class="btn-beautify outline blue larger" href="https://github.com/bmax121/APatch" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
-<div class="note warning no-icon modern"><p>无论何时，Apatch提取并修补的都是<span style="color: red;">boot分区</span>，除非Google未来更换Linux内核位置，否则均为boot</p>
-</div>
-
-<hr>
-<h2 id="从Magisk-Kernel-SU切换至Apatch"><a href="#从Magisk-Kernel-SU切换至Apatch" class="headerlink" title="从Magisk&#x2F;Kernel SU切换至Apatch"></a>从Magisk&#x2F;Kernel SU切换至Apatch</h2><p>太简单了，不想写，你们自己看吧：<a class="btn-beautify outline blue larger" href="https://coolapk.com/feed/57809622?shareKey=MjMyYjNmN2YyNzJhNjZkMWM1ZjU~&shareUid=22627121&shareFrom=com.coolapk.market_13.3.3" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
-<div class="note warning no-icon modern"><p>使用此方法可能会导致Root方案残留，我只建议走2的流程，使用纯净boot修补然后正常刷入</p>
-</div>
-
-<hr>
-<h1 id="内存优化"><a href="#内存优化" class="headerlink" title="内存优化"></a>内存优化</h1><p>如果你希望修改内存的保留值，你可以到<mark class="hl-label orange">/data/system/NoActive_xxxxxxxx/config/MemConfig.json</mark>中修改freeRAM或freeSWAP</p>
-<p>0(自动)，负整数(关闭)，正整数为指定的值单位为<span style="color: red;">MB</span></p>
-<div class="note warning no-icon modern"><p><span style="color: red;">注意：ZRAM和Swapfile都属于SWAP(交换分区)<br>你需要写入符合JSON语法格式的配置，否则Noactive会自动清除错误配置并还原</span></p>
-</div>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	&quot;freeRAM&quot;:0,   &lt;---- 物理内存保留值</span><br><span class="line">	&quot;freeSWAP&quot;:0,  &lt;---- 交换分区保留值</span><br><span class="line">	&quot;highPriorityUidSet&quot;:[ &lt;-- (高)</span><br><span class="line">		10258,</span><br><span class="line">		10299</span><br><span class="line">	],</span><br><span class="line">	&quot;lowPriorityUidSet&quot;:[ &lt;-- (低)</span><br><span class="line">		10272,</span><br><span class="line">		10289</span><br><span class="line">	],</span><br><span class="line">	&quot;mediumPriorityUidSet&quot;:[ &lt;-- (中)</span><br><span class="line">		</span><br><span class="line">	]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h1 id="FCM解冻"><a href="#FCM解冻" class="headerlink" title="FCM解冻"></a>FCM解冻</h1><p>Noactive自pro-173往后支持FCM解冻，由于配置文件变更，此处仅讨论此文发出时的最新版pro-185</p>
-<hr>
-<h2 id="不使用自定义，所有应用都支持FCM解冻"><a href="#不使用自定义，所有应用都支持FCM解冻" class="headerlink" title="不使用自定义，所有应用都支持FCM解冻"></a>不使用自定义，所有应用都支持FCM解冻</h2><p>你需要更改的配置文件&#x2F;data&#x2F;system&#x2F;NoActive_xxxxxxxx&#x2F;的AdvanceConfig文件，receiveFCM后面的false改成true，保存后无需重启即可生效</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	&quot;adaptiveIcon&quot;:false,</span><br><span class="line">	&quot;fcmAppSet&quot;:[</span><br><span class="line">	],</span><br><span class="line">	&quot;receiveFCM&quot;:true,    </span><br><span class="line">	&quot;speedMode&quot;:false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>示例配置</p>
-</blockquote>
-<hr>
-<h2 id="使用自定义，选择部分应用可以FCM解冻"><a href="#使用自定义，选择部分应用可以FCM解冻" class="headerlink" title="使用自定义，选择部分应用可以FCM解冻"></a>使用自定义，选择部分应用可以FCM解冻</h2><p>配置文件依然为&#x2F;data&#x2F;system&#x2F;NoActive_xxxxxxxx&#x2F;的AdvanceConfig文件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	&quot;adaptiveIcon&quot;:false,</span><br><span class="line">	&quot;fcmAppSet&quot;:[</span><br><span class="line">        &quot;com.microsoft.office.outlook&quot;,</span><br><span class="line">        &quot;com.x8bit.bitwarden&quot;                 &lt;-- (在这里添加包名)</span><br><span class="line">	],</span><br><span class="line">	&quot;receiveFCM&quot;:false,</span><br><span class="line">	&quot;speedMode&quot;:false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<div class="note warning no-icon modern"><p>你依然需要填写符合<span style="color: red;">JSON格式</span>的包名</p>
-<p>如果填写包名，则receiveFCM应为false</p>
-</div>
-
-<hr>
-<h1 id="冻结Binder"><a href="#冻结Binder" class="headerlink" title="冻结Binder"></a>冻结Binder</h1><p>关于Binder的介绍请查看名词解读与定义：<a class="btn-beautify blue larger" href="/../%E5%90%8D%E8%AF%8D%E8%A7%A3%E8%AF%BB" title="点击查看名词解读"><i class="far fa-hand-point-right"></i><span>点击查看名词解读</span></a></p>
-<p>BinderFreeze用于阻断被冻结的应用与其它应用之间的通信，此特性自5.10内核开始支持，但目前仍然存在各种各样的问题，包括但不限于<span style="color: red;">应用假断网、出现卡屏或闪弹</span></p>
-<div class="note warning no-icon modern"><p>Noactive的BinderFreeze默认关闭，如果你出现以上这些问题请看：<a class="btn-beautify blue larger" href="/../%E5%90%8D%E8%AF%8D%E8%A7%A3%E8%AF%BB" title="名词解读"><i class="far fa-hand-point-right"></i><span>名词解读</span></a></p>
-</div>
-
-<p>6.1内核会比5.10&#x2F;5.15具有更良好的BinderFreeze体验，但仍然不建议使用BinderFreeze，目前的Binder临时解冻虽然不够完美，但依然是目前唯一不存在问题的解决方案</p>
-]]></content>
-      <categories>
-        <category>NoActive</category>
-      </categories>
-      <tags>
-        <tag>NoActive</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>名词解读</title>
-    <url>//%E5%90%8D%E8%AF%8D%E8%A7%A3%E8%AF%BB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="名词的解读与定义"><a href="#名词的解读与定义" class="headerlink" title="名词的解读与定义"></a>名词的解读与定义</h1><h2 id="白重载"><a href="#白重载" class="headerlink" title="白重载"></a>白重载</h2><div class="note warning no-icon modern"><p>由应用被压缩太严重，进程被杀或者应用没及时进行解冻造成。</p>
-<p>表现为：</p>
-<p>打开应用，应用页面重新加载</p>
-</div>
-
-<hr>
-<h2 id="黑重载"><a href="#黑重载" class="headerlink" title="黑重载"></a>黑重载</h2><div class="note warning no-icon modern"><p>相当于冷启动，因为存在程序不完整或者进程丢失，也就是炸binder。</p>
-<p>表现为：</p>
-<p>应用黑闪一下，出现桌面，然后重新加载页面</p>
-</div>
-
-<hr>
-<h2 id="闪弹"><a href="#闪弹" class="headerlink" title="闪弹"></a>闪弹</h2><div class="note warning no-icon modern"><p>目前闪弹触发条件不明，我觉得大部分出现于kill上面。</p>
-<p>表现为：</p>
-<p>应用进入后台之后再次打开，应用在动画没结束的时候就会自动闪退。等再次进入的时候就会发现重新启动了【这种再次重新加载也被成为冷启动】</p>
-</div>
-
-<hr>
-<h2 id="内存泄漏"><a href="#内存泄漏" class="headerlink" title="内存泄漏"></a>内存泄漏</h2><div class="note warning no-icon modern"><p>1.当你打开软件，然后清掉后台，重复操作，内存占用会一直累加，等到内存耗尽，就会出现卡顿和死机</p>
-<p>正常情况下杀死应用后会回收应用占用内存（如QQ占用1.7G内存，杀死QQ及其后台以后系统应能空闲出1.7G左右内存），但是内存泄漏情况下杀死应用后内存不会被回收，导致内存占用越来越多。目前仅freezerv1存在此问题。</p>
-<p>表现为：</p>
-<p>打开进程查询软件，如果出现2个一样的进程就是内存泄露（非双开应用）</p>
-<p>注：</p>
-<p>内存泄露会无法释放内存，导致内存满手机卡死，noa3x已经打了内存泄露补丁缓解，但是还是会造成内存泄露</p>
-<p>解决方法：</p>
-<p>重启手机</p>
-</div>
-
-<hr>
-<h2 id="掉卡片"><a href="#掉卡片" class="headerlink" title="掉卡片"></a>掉卡片</h2><div class="note warning no-icon modern"><p>表现为：</p>
-<p>1.软件进程还在，你去点应用的快捷方式还能打开，但是后台任务卡片掉了</p>
-<p>2.长时间不用的app在后台界面，卡片和进程一起丢失</p>
-<p>解决方法：</p>
-<p>刷入hook了后台防掉卡片的模块，例如后台优化，AppRetention等</p>
-</div>
-
-<hr>
-<h2 id="冻死"><a href="#冻死" class="headerlink" title="冻死"></a>冻死</h2><div class="note warning no-icon modern"><p>目前出现情况不明，在冻它和noa中我都见过冻死</p>
-<p>表现为：</p>
-<p>1.滑动页面，点击页面无响应</p>
-<p>2.滑动页面，点击页面无响应，重新切一次后台才能显示刚刚滑动，点击的页面，但是继续滑动页面，点击页面还是无响应，需要重新切一次后台才能显示刚刚滑动，点击的页面</p>
-<p>解决方法：</p>
-<p>杀死应用重新打开一次</p>
-<p>注：</p>
-<p>把应用从后台切换至前台，其中有一段时间无法滑动屏幕，需要过一段时间才可以滑动屏幕，这不是冻死，而是应用从交换分区交换至RAM中，或者是应用还在解冻中（一般情况下为前者）</p>
-</div>
-
-<hr>
-<h2 id="卡屏"><a href="#卡屏" class="headerlink" title="卡屏"></a>卡屏</h2><div class="note warning no-icon modern"><p>日前怀疑是binder有问题出现的</p>
-<p>表现为：</p>
-<p>点击&#x2F;滑动页面无响应，切后台重新进就正常</p>
-<p>卡屏与冻死的区别：</p>
-<p>卡屏切换后台重新进就解决，冻死之后，切换后台重新进也只是加载一下页面而已，滑动，点击还是不响应，切一次后台加载一下页面</p>
-</div>
-
-<hr>
-<h2 id="假断网"><a href="#假断网" class="headerlink" title="假断网"></a>假断网</h2><div class="note warning no-icon modern"><p>出现情况不明<br>表现为：<br>重新打开应用，在网络正常的情况下，应用无法连接网络<br>解决方法：<br>杀死应用重新打开一次</p>
-</div>
-
-<hr>
-<h2 id="Binder"><a href="#Binder" class="headerlink" title="Binder"></a>Binder</h2><div class="note warning no-icon modern"><p>1.Binder驱动是系统里负责应用之间通信，传递通信数据的驱动，位于dev&#x2F;binder。如果应用只是冻结的运行，而没有冻结其binder通信接口，那么在其冻结状态下，如果遇到其他应用发来的通信请求，京就无法及时回复，超时不回复将被安卓框架层认为应用运行异常而杀死。而后应用解冻时，大概率将发生瞬间闪退，重启，重载等等情况（来自冻它官网）</p>
-<p>2.常见binder通信路径在&#x2F;dev&#x2F;binder如果你刷的第三方内核魔改了binder就会出现路径错乱情，况只有小米原生墓碑才能使用binder_ open外加binder_ Freezer 在冻它对binder使用的是&#x2F;dev&#x2F;binder所以如果是5.4内核的就不要刷所谓的完整binder通信的内核除非你用小米的原生墓碑( 来自 @魔威 补充)</p>
-<p>3.虽然平时一直只说binder，实际上是两个东西，binder是Android本来就有的，冻结提到的binder实际上是通知墓碑有binder消息，要不要解冻（来自@lztxzr 补充）</p>
-</div>
-
-<hr>
-<h2 id="Freezer"><a href="#Freezer" class="headerlink" title="Freezer"></a>Freezer</h2><div class="note warning no-icon modern"><p>Freezer是cgroup的其中一个子控制器，用于冻结进程的CPU使用权。</p>
-</div>
-
-<hr>
-<h2 id="FreezerV1"><a href="#FreezerV1" class="headerlink" title="FreezerV1"></a>FreezerV1</h2><div class="note warning no-icon modern"><p>Freezer1很早便在内核中支持，3.×&#x2F;4.×&#x2F;5.×内核都会支持。部分内核的FreezerV1存在缺陷，进程处于冻结状态时无法被杀死，依旧占据内存，类似内存泄漏，需要解冻才能结束进程并释放内存。这是内核级缺陷，应用层大率无法解决，只能积极解冻来缓解</p>
-<p>注：某些手机厂商基于V1的墓碑机制（例如Freezerv1版Millet）会捕获杀进程信号及时解冻，这样会及时释放进程的内存。（充电时或者各类按键事件时，Millet也会积极解冻应用</p>
-</div>
-
-<hr>
-<h2 id="FreezerV2"><a href="#FreezerV2" class="headerlink" title="FreezerV2"></a>FreezerV2</h2><div class="note warning no-icon modern"><p>Freezer2在5.4内核Android11起支持，冻结效果好，且没有V1的类似内存泄漏问题高通平台一般在4.19内核就获得支持，但部分厂商的手机可能默认不会开启，需要使用额外模块手动开启。谷歌Pixel某些机型甚至在4.14内核中也有实现</p>
-</div>
-
-<hr>
-<h2 id="SIGSTOP"><a href="#SIGSTOP" class="headerlink" title="SIGSTOP"></a>SIGSTOP</h2><div class="note warning no-icon modern"><p>SIGSTOP是Linux中编号19的系统信号，不能被进程捕获，一旦进程收到该信号则被立即强制暂停运行。</p>
-</div>
-
-<hr>
-<h1 id="解冻方式"><a href="#解冻方式" class="headerlink" title="解冻方式"></a>解冻方式</h1><h2 id="Binder-解冻"><a href="#Binder-解冻" class="headerlink" title="Binder 解冻"></a>Binder 解冻</h2><div class="note warning no-icon modern"><p>利用系统间的通讯 binder进行临时解冻</p>
-<p>效果最好</p>
-</div>
-
-<hr>
-<h2 id="轮番解冻"><a href="#轮番解冻" class="headerlink" title="轮番解冻"></a>轮番解冻</h2><div class="note warning no-icon modern"><p>因为没有binder压死之后就需要让app来活一会让他以为自己还活着，轮的意思是轮着解</p>
-<p>冻一个app3秒，解冻是最久没打开的那个app</p>
-<p>例：</p>
-<p>我有5个应用，正常情况下是按顺序解冻的，也就是12345，但这时候我突然打开了3了，这时候顺序就会变成12453。</p>
-<p>noactive拥有这种解冻方式，该解冻方式不如binder解冻，只能作为binder解冻的下位品</p>
-</div>
-
-<hr>
-<h2 id="定时解冻"><a href="#定时解冻" class="headerlink" title="定时解冻"></a>定时解冻</h2><div class="note warning no-icon modern"><p>设置一个解冻时间，时间到了应用全部解冻</p>
-<p>冻它拥有这种解冻方式，该解冻方式不如binder解冻，只能作为binder解冻的下位品</p>
-</div>
-
-<hr>
-<h2 id="单应用定时解冻"><a href="#单应用定时解冻" class="headerlink" title="单应用定时解冻"></a>单应用定时解冻</h2><div class="note warning no-icon modern"><p>给应用绑定一个单独的定时器，时间到了解冻该应用。效果也好，但是会略微增加功耗</p>
-<p> 仅noactive-2.0拥有这种解冻方式，该解冻方式虽然不如binder解冻，但能与轮番解冻形成互补</p>
-</div>
-]]></content>
-      <categories>
-        <category>NoActive</category>
-      </categories>
-      <tags>
-        <tag>NoActive</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>NoActive新人必看文档</title>
     <url>//NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div align='center' ><font size='70'>NoActive</font></div>
@@ -319,7 +111,7 @@
 <ol start="3">
 <li><p>将捐赠截图发<span style="color: green;">[反馈]NoActive</span>并<span style="color: purple;">@myflavor </span>（不听的禁言7天起步）</p>
 </li>
-<li><p>前往激活码领取链接输入你领取激活码的邮箱地址与支付宝订单号<br>激活码领取链接：<a class="btn-beautify outline blue larger" href="/app.myflv.cn/pay" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
+<li><p>前往激活码领取链接输入你领取激活码的邮箱地址与支付宝订单号<br>激活码领取链接：<a class="btn-beautify outline blue larger" href="https://app.myflv.cn/pay" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
 <div class="note warning no-icon modern"><p>提示：<br><br><span style="color: red;">激活码将通过你提供的邮箱地址进行发放，每个订单号只能输入一次，注意邮箱地址是否正确，注意查收邮件</span><br><br><br>完成以上操作后，等待下载密码与激活码的发放，等待<span style="color: purple;">@myflavor </span>拉你进<span style="color: green;">《富家子弟—NoActive》</span>身份组<br><br>被拉进<span style="color: green;">《富家子弟—NoActive》</span>身份组后，将多出2个子频道：<br><br><span style="color: green;">[Pro用户]NoActive</span><br><br><span style="color: green;">[公告]NoA-Pro</span><br><br><br>注：<br><br>别问什么时候拉你进身份组，由<span style="color: purple;">@myflavor </span>人工审核并拉入身份组，再问禁言 1天。点击<a class="btn-beautify outline blue larger" href="#激活码的使用" title="跳转到激活码的使用"><i class="far fa-hand-point-right"></i><span>跳转到激活码的使用</span></a><br><br>PRO版下载密码会发在<span style="color: green;">[公告]NoA-Pro</span></p>
 </div></li>
 </ol>
@@ -665,6 +457,214 @@
 
 <a class="btn-beautify orange larger" href="/../NoActive%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3" title="点击查看进阶文档"><i class="far fa-hand-point-right"></i><span>点击查看进阶文档</span></a>
 
+]]></content>
+      <categories>
+        <category>NoActive</category>
+      </categories>
+      <tags>
+        <tag>NoActive</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NoActive进阶文档</title>
+    <url>//NoActive%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div align='center' ><font size='70'>NoActive</font></div>
+<div align='center' ><font size='70'>进阶文档</font></div>
+
+<!-- <div class="note danger modern"><p>前方正在施工中, 稍后再来探索吧~</p>
+</div> -->
+
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><div class="note warning flat"><p>本文是为<mark class="hl-label orange">极客和有折腾精神的人</mark>所准备的进阶篇文档,大部分内容需要你自己动手实操，并且可能会出现包括但不限于以下几种情况：<span style="color: red;">手机变砖、出现发热与卡顿、环境异常等</span></p>
+</div>
+
+<p>如果你觉得本文有任何错误或需要补充的地方，可在频道<mark class="hl-label purple">@The End</mark>(频道ID)进行添加或修改</p>
+<div class="note red icon-padding flat"><i class="note-icon fa-solid fa-triangle-exclamation"></i><h1 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h1><div align='center' ><font size='4'>你所进行的一切行为均由你自己承担责任，别砖了过来找我，不会提供任何帮助，自己想办法</font></div>
+</div>
+
+<hr>
+<h1 id="Re-Kernel-KPM相关问题"><a href="#Re-Kernel-KPM相关问题" class="headerlink" title="Re-Kernel KPM相关问题"></a>Re-Kernel KPM相关问题</h1><p>KPM模块为Apatch独占（即Apatch管理器内核模块一栏），所以你需要刷入Apatch才能使用KPM版Re-Kernel<br><br></p>
+<hr>
+<h2 id="Apatch与其它Root方案共存"><a href="#Apatch与其它Root方案共存" class="headerlink" title="Apatch与其它Root方案共存"></a>Apatch与其它Root方案共存</h2><p>你需要两个东西：KernelPatch镜像与Apatch Apk</p>
+<p>KernelPatch：<a class="btn-beautify outline blue larger" href="https://github.com/bmax121/kernelpatch" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
+<p>Apatch：<a class="btn-beautify outline blue larger" href="https://github.com/bmax121/APatch" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
+<div class="note warning no-icon modern"><p>无论何时都只建议使用Release版本进行替换，Pre-Release或Github Ci构建的的版本可能导致不可知的问题</p>
+<p>以及，请务必使Apatch安装包的<span style="color: red;">原KernelPatch版本号与你要替换的版本号</span>对应，<span style="color: red;">不对应的版本号会不生效，同时有极大概率导致变砖</span>，一定注意</p>
+</div>
+
+<p>这里以Apatch 10763版本为例，下载对应的kpimg-linux</p>
+<p><img src="/NoActive%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3/%E5%85%B1%E5%AD%98.png" alt="共存"></p>
+<p>然后重命名kpimg-linux为kpimg，并替换掉Apatch Apk当中的kpimg</p>
+<div class="note warning no-icon modern"><p>kpimg在assets文件夹</p>
+</div>
+
+<p><img src="/NoActive%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3/%E5%85%B1%E5%AD%982.png" alt="共存"></p>
+<p>然后用Scene之类的工具提取你当前的boot.img，用你替换完的Apatch修补后再刷入boot.img</p>
+<div class="note warning no-icon modern"><p>VAB分区的设备你当前处于哪个分区就提取哪个，别搞错活动分区了</p>
+<p>例：A分区设备提取boot_a.img</p>
+</div>
+
+<p>至此，共存部分结束，重启后你会发现仅内核模块可用，Root授权和系统模块均不可用，这时就可以使用Re-Kernel KPM了</p>
+<div class="note warning no-icon modern"><p>只建议先加载，然后再使用嵌入，以防止出现内核不兼容导致的<span style="color: red;">卡开机</span>问题等</p>
+</div>
+
+<hr>
+<h2 id="用Apatch作为Root方案"><a href="#用Apatch作为Root方案" class="headerlink" title="用Apatch作为Root方案"></a>用Apatch作为Root方案</h2><p>流程与其它Root方案几乎一致</p>
+<p>Apatch Apk：<a class="btn-beautify outline blue larger" href="https://github.com/bmax121/APatch" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
+<div class="note warning no-icon modern"><p>无论何时，Apatch提取并修补的都是<span style="color: red;">boot分区</span>，除非Google未来更换Linux内核位置，否则均为boot</p>
+</div>
+
+<hr>
+<h2 id="从Magisk-Kernel-SU切换至Apatch"><a href="#从Magisk-Kernel-SU切换至Apatch" class="headerlink" title="从Magisk&#x2F;Kernel SU切换至Apatch"></a>从Magisk&#x2F;Kernel SU切换至Apatch</h2><p>太简单了，不想写，你们自己看吧：<a class="btn-beautify outline blue larger" href="https://coolapk.com/feed/57809622?shareKey=MjMyYjNmN2YyNzJhNjZkMWM1ZjU~&shareUid=22627121&shareFrom=com.coolapk.market_13.3.3" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
+<div class="note warning no-icon modern"><p>使用此方法可能会导致Root方案残留，我只建议走2的流程，使用纯净boot修补然后正常刷入</p>
+</div>
+
+<hr>
+<h1 id="内存优化"><a href="#内存优化" class="headerlink" title="内存优化"></a>内存优化</h1><p>如果你希望修改内存的保留值，你可以到<mark class="hl-label orange">/data/system/NoActive_xxxxxxxx/config/MemConfig.json</mark>中修改freeRAM或freeSWAP</p>
+<p>0(自动)，负整数(关闭)，正整数为指定的值单位为<span style="color: red;">MB</span></p>
+<div class="note warning no-icon modern"><p><span style="color: red;">注意：ZRAM和Swapfile都属于SWAP(交换分区)<br>你需要写入符合JSON语法格式的配置，否则Noactive会自动清除错误配置并还原</span></p>
+</div>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	&quot;freeRAM&quot;:0,   &lt;---- 物理内存保留值</span><br><span class="line">	&quot;freeSWAP&quot;:0,  &lt;---- 交换分区保留值</span><br><span class="line">	&quot;highPriorityUidSet&quot;:[ &lt;-- (高)</span><br><span class="line">		10258,</span><br><span class="line">		10299</span><br><span class="line">	],</span><br><span class="line">	&quot;lowPriorityUidSet&quot;:[ &lt;-- (低)</span><br><span class="line">		10272,</span><br><span class="line">		10289</span><br><span class="line">	],</span><br><span class="line">	&quot;mediumPriorityUidSet&quot;:[ &lt;-- (中)</span><br><span class="line">		</span><br><span class="line">	]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="FCM解冻"><a href="#FCM解冻" class="headerlink" title="FCM解冻"></a>FCM解冻</h1><p>Noactive自pro-173往后支持FCM解冻，由于配置文件变更，此处仅讨论此文发出时的最新版pro-185</p>
+<hr>
+<h2 id="不使用自定义，所有应用都支持FCM解冻"><a href="#不使用自定义，所有应用都支持FCM解冻" class="headerlink" title="不使用自定义，所有应用都支持FCM解冻"></a>不使用自定义，所有应用都支持FCM解冻</h2><p>你需要更改的配置文件&#x2F;data&#x2F;system&#x2F;NoActive_xxxxxxxx&#x2F;的AdvanceConfig文件，receiveFCM后面的false改成true，保存后无需重启即可生效</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	&quot;adaptiveIcon&quot;:false,</span><br><span class="line">	&quot;fcmAppSet&quot;:[</span><br><span class="line">	],</span><br><span class="line">	&quot;receiveFCM&quot;:true,    </span><br><span class="line">	&quot;speedMode&quot;:false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>示例配置</p>
+</blockquote>
+<hr>
+<h2 id="使用自定义，选择部分应用可以FCM解冻"><a href="#使用自定义，选择部分应用可以FCM解冻" class="headerlink" title="使用自定义，选择部分应用可以FCM解冻"></a>使用自定义，选择部分应用可以FCM解冻</h2><p>配置文件依然为&#x2F;data&#x2F;system&#x2F;NoActive_xxxxxxxx&#x2F;的AdvanceConfig文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	&quot;adaptiveIcon&quot;:false,</span><br><span class="line">	&quot;fcmAppSet&quot;:[</span><br><span class="line">        &quot;com.microsoft.office.outlook&quot;,</span><br><span class="line">        &quot;com.x8bit.bitwarden&quot;                 &lt;-- (在这里添加包名)</span><br><span class="line">	],</span><br><span class="line">	&quot;receiveFCM&quot;:false,</span><br><span class="line">	&quot;speedMode&quot;:false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<div class="note warning no-icon modern"><p>你依然需要填写符合<span style="color: red;">JSON格式</span>的包名</p>
+<p>如果填写包名，则receiveFCM应为false</p>
+</div>
+
+<hr>
+<h1 id="冻结Binder"><a href="#冻结Binder" class="headerlink" title="冻结Binder"></a>冻结Binder</h1><p>关于Binder的介绍请查看名词解读与定义：<a class="btn-beautify blue larger" href="/../%E5%90%8D%E8%AF%8D%E8%A7%A3%E8%AF%BB" title="点击查看名词解读"><i class="far fa-hand-point-right"></i><span>点击查看名词解读</span></a></p>
+<p>BinderFreeze用于阻断被冻结的应用与其它应用之间的通信，此特性自5.10内核开始支持，但目前仍然存在各种各样的问题，包括但不限于<span style="color: red;">应用假断网、出现卡屏或闪弹</span></p>
+<div class="note warning no-icon modern"><p>Noactive的BinderFreeze默认关闭，如果你出现以上这些问题请看：<a class="btn-beautify blue larger" href="/../%E5%90%8D%E8%AF%8D%E8%A7%A3%E8%AF%BB" title="名词解读"><i class="far fa-hand-point-right"></i><span>名词解读</span></a></p>
+</div>
+
+<p>6.1内核会比5.10&#x2F;5.15具有更良好的BinderFreeze体验，但仍然不建议使用BinderFreeze，目前的Binder临时解冻虽然不够完美，但依然是目前唯一不存在问题的解决方案</p>
+]]></content>
+      <categories>
+        <category>NoActive</category>
+      </categories>
+      <tags>
+        <tag>NoActive</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>名词解读</title>
+    <url>//%E5%90%8D%E8%AF%8D%E8%A7%A3%E8%AF%BB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="名词的解读与定义"><a href="#名词的解读与定义" class="headerlink" title="名词的解读与定义"></a>名词的解读与定义</h1><h2 id="白重载"><a href="#白重载" class="headerlink" title="白重载"></a>白重载</h2><div class="note warning no-icon modern"><p>由应用被压缩太严重，进程被杀或者应用没及时进行解冻造成。</p>
+<p>表现为：</p>
+<p>打开应用，应用页面重新加载</p>
+</div>
+
+<hr>
+<h2 id="黑重载"><a href="#黑重载" class="headerlink" title="黑重载"></a>黑重载</h2><div class="note warning no-icon modern"><p>相当于冷启动，因为存在程序不完整或者进程丢失，也就是炸binder。</p>
+<p>表现为：</p>
+<p>应用黑闪一下，出现桌面，然后重新加载页面</p>
+</div>
+
+<hr>
+<h2 id="闪弹"><a href="#闪弹" class="headerlink" title="闪弹"></a>闪弹</h2><div class="note warning no-icon modern"><p>目前闪弹触发条件不明，我觉得大部分出现于kill上面。</p>
+<p>表现为：</p>
+<p>应用进入后台之后再次打开，应用在动画没结束的时候就会自动闪退。等再次进入的时候就会发现重新启动了【这种再次重新加载也被成为冷启动】</p>
+</div>
+
+<hr>
+<h2 id="内存泄漏"><a href="#内存泄漏" class="headerlink" title="内存泄漏"></a>内存泄漏</h2><div class="note warning no-icon modern"><p>1.当你打开软件，然后清掉后台，重复操作，内存占用会一直累加，等到内存耗尽，就会出现卡顿和死机</p>
+<p>正常情况下杀死应用后会回收应用占用内存（如QQ占用1.7G内存，杀死QQ及其后台以后系统应能空闲出1.7G左右内存），但是内存泄漏情况下杀死应用后内存不会被回收，导致内存占用越来越多。目前仅freezerv1存在此问题。</p>
+<p>表现为：</p>
+<p>打开进程查询软件，如果出现2个一样的进程就是内存泄露（非双开应用）</p>
+<p>注：</p>
+<p>内存泄露会无法释放内存，导致内存满手机卡死，noa3x已经打了内存泄露补丁缓解，但是还是会造成内存泄露</p>
+<p>解决方法：</p>
+<p>重启手机</p>
+</div>
+
+<hr>
+<h2 id="掉卡片"><a href="#掉卡片" class="headerlink" title="掉卡片"></a>掉卡片</h2><div class="note warning no-icon modern"><p>表现为：</p>
+<p>1.软件进程还在，你去点应用的快捷方式还能打开，但是后台任务卡片掉了</p>
+<p>2.长时间不用的app在后台界面，卡片和进程一起丢失</p>
+<p>解决方法：</p>
+<p>刷入hook了后台防掉卡片的模块，例如后台优化，AppRetention等</p>
+</div>
+
+<hr>
+<h2 id="冻死"><a href="#冻死" class="headerlink" title="冻死"></a>冻死</h2><div class="note warning no-icon modern"><p>目前出现情况不明，在冻它和noa中我都见过冻死</p>
+<p>表现为：</p>
+<p>1.滑动页面，点击页面无响应</p>
+<p>2.滑动页面，点击页面无响应，重新切一次后台才能显示刚刚滑动，点击的页面，但是继续滑动页面，点击页面还是无响应，需要重新切一次后台才能显示刚刚滑动，点击的页面</p>
+<p>解决方法：</p>
+<p>杀死应用重新打开一次</p>
+<p>注：</p>
+<p>把应用从后台切换至前台，其中有一段时间无法滑动屏幕，需要过一段时间才可以滑动屏幕，这不是冻死，而是应用从交换分区交换至RAM中，或者是应用还在解冻中（一般情况下为前者）</p>
+</div>
+
+<hr>
+<h2 id="卡屏"><a href="#卡屏" class="headerlink" title="卡屏"></a>卡屏</h2><div class="note warning no-icon modern"><p>日前怀疑是binder有问题出现的</p>
+<p>表现为：</p>
+<p>点击&#x2F;滑动页面无响应，切后台重新进就正常</p>
+<p>卡屏与冻死的区别：</p>
+<p>卡屏切换后台重新进就解决，冻死之后，切换后台重新进也只是加载一下页面而已，滑动，点击还是不响应，切一次后台加载一下页面</p>
+</div>
+
+<hr>
+<h2 id="假断网"><a href="#假断网" class="headerlink" title="假断网"></a>假断网</h2><div class="note warning no-icon modern"><p>出现情况不明<br>表现为：<br>重新打开应用，在网络正常的情况下，应用无法连接网络<br>解决方法：<br>杀死应用重新打开一次</p>
+</div>
+
+<hr>
+<h2 id="Binder"><a href="#Binder" class="headerlink" title="Binder"></a>Binder</h2><div class="note warning no-icon modern"><p>1.Binder驱动是系统里负责应用之间通信，传递通信数据的驱动，位于dev&#x2F;binder。如果应用只是冻结的运行，而没有冻结其binder通信接口，那么在其冻结状态下，如果遇到其他应用发来的通信请求，京就无法及时回复，超时不回复将被安卓框架层认为应用运行异常而杀死。而后应用解冻时，大概率将发生瞬间闪退，重启，重载等等情况（来自冻它官网）</p>
+<p>2.常见binder通信路径在&#x2F;dev&#x2F;binder如果你刷的第三方内核魔改了binder就会出现路径错乱情，况只有小米原生墓碑才能使用binder_ open外加binder_ Freezer 在冻它对binder使用的是&#x2F;dev&#x2F;binder所以如果是5.4内核的就不要刷所谓的完整binder通信的内核除非你用小米的原生墓碑( 来自 @魔威 补充)</p>
+<p>3.虽然平时一直只说binder，实际上是两个东西，binder是Android本来就有的，冻结提到的binder实际上是通知墓碑有binder消息，要不要解冻（来自@lztxzr 补充）</p>
+</div>
+
+<hr>
+<h2 id="Freezer"><a href="#Freezer" class="headerlink" title="Freezer"></a>Freezer</h2><div class="note warning no-icon modern"><p>Freezer是cgroup的其中一个子控制器，用于冻结进程的CPU使用权。</p>
+</div>
+
+<hr>
+<h2 id="FreezerV1"><a href="#FreezerV1" class="headerlink" title="FreezerV1"></a>FreezerV1</h2><div class="note warning no-icon modern"><p>Freezer1很早便在内核中支持，3.×&#x2F;4.×&#x2F;5.×内核都会支持。部分内核的FreezerV1存在缺陷，进程处于冻结状态时无法被杀死，依旧占据内存，类似内存泄漏，需要解冻才能结束进程并释放内存。这是内核级缺陷，应用层大率无法解决，只能积极解冻来缓解</p>
+<p>注：某些手机厂商基于V1的墓碑机制（例如Freezerv1版Millet）会捕获杀进程信号及时解冻，这样会及时释放进程的内存。（充电时或者各类按键事件时，Millet也会积极解冻应用</p>
+</div>
+
+<hr>
+<h2 id="FreezerV2"><a href="#FreezerV2" class="headerlink" title="FreezerV2"></a>FreezerV2</h2><div class="note warning no-icon modern"><p>Freezer2在5.4内核Android11起支持，冻结效果好，且没有V1的类似内存泄漏问题高通平台一般在4.19内核就获得支持，但部分厂商的手机可能默认不会开启，需要使用额外模块手动开启。谷歌Pixel某些机型甚至在4.14内核中也有实现</p>
+</div>
+
+<hr>
+<h2 id="SIGSTOP"><a href="#SIGSTOP" class="headerlink" title="SIGSTOP"></a>SIGSTOP</h2><div class="note warning no-icon modern"><p>SIGSTOP是Linux中编号19的系统信号，不能被进程捕获，一旦进程收到该信号则被立即强制暂停运行。</p>
+</div>
+
+<hr>
+<h1 id="解冻方式"><a href="#解冻方式" class="headerlink" title="解冻方式"></a>解冻方式</h1><h2 id="Binder-解冻"><a href="#Binder-解冻" class="headerlink" title="Binder 解冻"></a>Binder 解冻</h2><div class="note warning no-icon modern"><p>利用系统间的通讯 binder进行临时解冻</p>
+<p>效果最好</p>
+</div>
+
+<hr>
+<h2 id="轮番解冻"><a href="#轮番解冻" class="headerlink" title="轮番解冻"></a>轮番解冻</h2><div class="note warning no-icon modern"><p>因为没有binder压死之后就需要让app来活一会让他以为自己还活着，轮的意思是轮着解</p>
+<p>冻一个app3秒，解冻是最久没打开的那个app</p>
+<p>例：</p>
+<p>我有5个应用，正常情况下是按顺序解冻的，也就是12345，但这时候我突然打开了3了，这时候顺序就会变成12453。</p>
+<p>noactive拥有这种解冻方式，该解冻方式不如binder解冻，只能作为binder解冻的下位品</p>
+</div>
+
+<hr>
+<h2 id="定时解冻"><a href="#定时解冻" class="headerlink" title="定时解冻"></a>定时解冻</h2><div class="note warning no-icon modern"><p>设置一个解冻时间，时间到了应用全部解冻</p>
+<p>冻它拥有这种解冻方式，该解冻方式不如binder解冻，只能作为binder解冻的下位品</p>
+</div>
+
+<hr>
+<h2 id="单应用定时解冻"><a href="#单应用定时解冻" class="headerlink" title="单应用定时解冻"></a>单应用定时解冻</h2><div class="note warning no-icon modern"><p>给应用绑定一个单独的定时器，时间到了解冻该应用。效果也好，但是会略微增加功耗</p>
+<p> 仅noactive-2.0拥有这种解冻方式，该解冻方式虽然不如binder解冻，但能与轮番解冻形成互补</p>
+</div>
 ]]></content>
       <categories>
         <category>NoActive</category>

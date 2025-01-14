@@ -252,10 +252,10 @@
 </li>
 <li><p>如果你正在使用Android 14及以上，可尝试使用LSPosed npm 7075，该版本在A14上已测试通过，可以正常使用NoActive，但A15未经测试，可自行尝试是否可用</p>
 </li>
-<li><p>如果你正在使用Android 15，可尝试使用LSPosed mod（By mywalkb）或LSPosed（By JingMartix）</p>
+<li><p>如果你正在使用Android 15，可尝试使用LSPosed（By JingMartix）<br>目前而言，优先推荐使用内测版LSPosed而非JingMatrix的改版LSPosed</p>
 </li>
 </ol>
-<div class="note warning no-icon modern"><p>目前而言，不建议使用JingMatrix的LSPosed改版<br><br>下载地址：<br><br>LSPosed 官方：<a class="btn-beautify outline blue larger" href="https://github.com/LSPosed/LSPosed/releases" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a><br><br>LSPosed npm：<a class="btn-beautify outline blue larger" href="https://down.app.myflv.cn/Env" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a><br><br>LSPosed（mywalkb）：<a class="btn-beautify outline blue larger" href="https://github.com/mywalkb/LSPosed_mod/releases" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a><br><br>LSPosed（JingMatrix）：<a class="btn-beautify outline blue larger" href="https://github.com/JingMatrix/LSPosed" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
+<div class="note warning no-icon modern"><p>下载地址：<br><br>LSPosed 官方：<a class="btn-beautify outline blue larger" href="https://github.com/LSPosed/LSPosed/releases" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a><br><br>LSPosed npm：<a class="btn-beautify outline blue larger" href="https://down.app.myflv.cn/Env" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a><br><br>LSPosed（JingMatrix）：<a class="btn-beautify outline blue larger" href="https://github.com/JingMatrix/LSPosed" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
 </div>
 
 
@@ -358,8 +358,8 @@
 
 <p>设置FCM解冻相关请查看：<a class="btn-beautify orange larger" href="/../NoActive%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3" title="进阶文档"><i class="far fa-hand-point-right"></i><span>进阶文档</span></a></p>
 <hr>
-<h2 id="在使用NoActive后Zygisk失效"><a href="#在使用NoActive后Zygisk失效" class="headerlink" title="在使用NoActive后Zygisk失效"></a>在使用NoActive后Zygisk失效</h2><p>据<span style="color: purple;">@后宫学长</span>(频道ID)所说，这是因为你所用的<span style="color: red;">ROM的内核开了debug调试</span>，导致Zygisk莫名其妙的失效</p>
-<div class="note warning no-icon modern"><p>解决方法<br><br>1.使用163版本的NoActive，在此之后的所有版本均存在该问题<br><br>2.更换内核<span style="color: red;">（不确定是否可行，请自行测试）</span><br><br>3.更换系统ROM</p>
+<h2 id="在使用NoActive后Zygisk失效"><a href="#在使用NoActive后Zygisk失效" class="headerlink" title="在使用NoActive后Zygisk失效"></a>在使用NoActive后Zygisk失效</h2><p>据<span style="color: purple;">@myflavor</span>(频道ID)所说，掉zygisk是因为你使用的系统对system_server开启了ptrace调试</p>
+<div class="note warning no-icon modern"><p>解决方法<br><br>1.使用历史版本里的163版本NoActive，在此之后的所有版本均存在该问题<br>（163版不支持安卓15）<br><br>2.更换系统ROM</p>
 </div>
 
 
@@ -425,7 +425,7 @@
 <h2 id="Re-kernel-KPM"><a href="#Re-kernel-KPM" class="headerlink" title="Re-kernel KPM"></a>Re-kernel KPM</h2><ol>
 <li><p>该模块能被4.4；4.19；5.4；5.10；5.15；6.1的内核使用，但是因为需要兼容低版本内核，所以说在执行效率上不如LKM版Rekernel，高版本内核推荐LKM版Rekernel</p>
 </li>
-<li><p>由于该模块的特殊性，所以需要依靠Apatch管理器运行，所以在此之前，你需要把管理器更换成Apatch或者让Magisk、Kernel SU与Apatch共存</p>
+<li><p>由于该模块的特殊性，所以需要依靠Apatch管理器运行，所以在此之前，你需要把管理器更换成Apatch或者让Magisk&#x2F;Kernel SU与Apatch共存</p>
 <p>方法：<a class="btn-beautify outline blue larger" href="https://docs.qq.com/doc/DS05PalBZbFR6cEdB" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
 </li>
 <li><p>Re-kernel KPM官方路径链接：<a class="btn-beautify outline blue larger" href="https://coolapk.com/feed/55238890" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>

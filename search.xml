@@ -1,99 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>NoActive进阶文档</title>
-    <url>//NoActive%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div align='center' ><font size='70'>NoActive</font></div>
-<div align='center' ><font size='70'>进阶文档</font></div>
-
-<!-- <div class="note danger modern"><p>前方正在施工中, 稍后再来探索吧~</p>
-</div> -->
-
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><div class="note warning flat"><p>本文是为<mark class="hl-label orange">极客和有折腾精神的人</mark>所准备的进阶篇文档,大部分内容需要你自己动手实操，并且可能会出现包括但不限于以下几种情况：<span style="color: red;">手机变砖、出现发热与卡顿、环境异常等</span></p>
-</div>
-
-<p>如果你觉得本文有任何错误或需要补充的地方，可在频道<mark class="hl-label purple">@The End</mark>(频道ID)进行添加或修改</p>
-<div class="note red icon-padding flat"><i class="note-icon fa-solid fa-triangle-exclamation"></i><h1 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h1><div align='center' ><font size='4'>你所进行的一切行为均由你自己承担责任，别砖了过来找我，不会提供任何帮助，自己想办法</font></div>
-</div>
-
-<hr>
-<h1 id="Re-Kernel-KPM相关问题"><a href="#Re-Kernel-KPM相关问题" class="headerlink" title="Re-Kernel KPM相关问题"></a>Re-Kernel KPM相关问题</h1><p>KPM模块为Apatch独占（即Apatch管理器内核模块一栏），所以你需要刷入Apatch才能使用KPM版Re-Kernel<br><br></p>
-<hr>
-<h2 id="Apatch与其它Root方案共存"><a href="#Apatch与其它Root方案共存" class="headerlink" title="Apatch与其它Root方案共存"></a>Apatch与其它Root方案共存</h2><p>你需要两个东西：KernelPatch镜像与Apatch Apk</p>
-<p>KernelPatch：<a class="btn-beautify outline blue larger" href="https://github.com/bmax121/kernelpatch" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
-<p>Apatch：<a class="btn-beautify outline blue larger" href="https://github.com/bmax121/APatch" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
-<div class="note warning no-icon modern"><p>无论何时都只建议使用Release版本进行替换，Pre-Release或Github Ci构建的的版本可能导致不可知的问题</p>
-<p>以及，请务必使Apatch安装包的<span style="color: red;">原KernelPatch版本号与你要替换的版本号</span>对应，<span style="color: red;">不对应的版本号会不生效，同时有极大概率导致变砖</span>，一定注意</p>
-</div>
-
-<p>这里以Apatch 10763版本为例，下载对应的kpimg-linux</p>
-<p><img src="/NoActive%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3/%E5%85%B1%E5%AD%98.png" alt="共存"></p>
-<p>然后重命名kpimg-linux为kpimg，并替换掉Apatch Apk当中的kpimg</p>
-<div class="note warning no-icon modern"><p>kpimg在assets文件夹</p>
-</div>
-
-<p><img src="/NoActive%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3/%E5%85%B1%E5%AD%982.png" alt="共存"></p>
-<p>然后用Scene之类的工具提取你当前的boot.img，用你替换完的Apatch修补后再刷入boot.img</p>
-<div class="note warning no-icon modern"><p>VAB分区的设备你当前处于哪个分区就提取哪个，别搞错活动分区了</p>
-<p>例：A分区设备提取boot_a.img</p>
-</div>
-
-<p>至此，共存部分结束，重启后你会发现仅内核模块可用，Root授权和系统模块均不可用，这时就可以使用Re-Kernel KPM了</p>
-<div class="note warning no-icon modern"><p>只建议先加载，然后再使用嵌入，以防止出现内核不兼容导致的<span style="color: red;">卡开机</span>问题等</p>
-</div>
-
-<hr>
-<h2 id="用Apatch作为Root方案"><a href="#用Apatch作为Root方案" class="headerlink" title="用Apatch作为Root方案"></a>用Apatch作为Root方案</h2><p>流程与其它Root方案几乎一致</p>
-<p>Apatch Apk：<a class="btn-beautify outline blue larger" href="https://github.com/bmax121/APatch" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
-<div class="note warning no-icon modern"><p>无论何时，Apatch提取并修补的都是<span style="color: red;">boot分区</span>，除非Google未来更换Linux内核位置，否则均为boot</p>
-</div>
-
-<hr>
-<h2 id="从Magisk-Kernel-SU切换至Apatch"><a href="#从Magisk-Kernel-SU切换至Apatch" class="headerlink" title="从Magisk&#x2F;Kernel SU切换至Apatch"></a>从Magisk&#x2F;Kernel SU切换至Apatch</h2><p>太简单了，不想写，你们自己看吧：<a class="btn-beautify outline blue larger" href="https://coolapk.com/feed/57809622?shareKey=MjMyYjNmN2YyNzJhNjZkMWM1ZjU~&shareUid=22627121&shareFrom=com.coolapk.market_13.3.3" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
-<div class="note warning no-icon modern"><p>使用此方法可能会导致Root方案残留，我只建议走2的流程，使用纯净boot修补然后正常刷入</p>
-</div>
-
-<hr>
-<h1 id="内存优化"><a href="#内存优化" class="headerlink" title="内存优化"></a>内存优化</h1><p>如果你希望修改内存的保留值，你可以到<mark class="hl-label orange">/data/system/NoActive_xxxxxxxx/config/MemConfig.json</mark>中修改freeRAM或freeSWAP</p>
-<p>0(自动)，负整数(关闭)，正整数为指定的值单位为<span style="color: red;">MB</span></p>
-<div class="note warning no-icon modern"><p><span style="color: red;">注意：ZRAM和Swapfile都属于SWAP(交换分区)<br>你需要写入符合JSON语法格式的配置，否则Noactive会自动清除错误配置并还原</span></p>
-</div>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	&quot;freeRAM&quot;:0,   &lt;---- 物理内存保留值</span><br><span class="line">	&quot;freeSWAP&quot;:0,  &lt;---- 交换分区保留值</span><br><span class="line">	&quot;highPriorityUidSet&quot;:[ &lt;-- (高)</span><br><span class="line">		10258,</span><br><span class="line">		10299</span><br><span class="line">	],</span><br><span class="line">	&quot;lowPriorityUidSet&quot;:[ &lt;-- (低)</span><br><span class="line">		10272,</span><br><span class="line">		10289</span><br><span class="line">	],</span><br><span class="line">	&quot;mediumPriorityUidSet&quot;:[ &lt;-- (中)</span><br><span class="line">		</span><br><span class="line">	]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h1 id="FCM解冻"><a href="#FCM解冻" class="headerlink" title="FCM解冻"></a>FCM解冻</h1><p>Noactive自pro-173往后支持FCM解冻，由于配置文件变更，此处仅讨论此文发出时的最新版pro-185</p>
-<hr>
-<h2 id="不使用自定义，所有应用都支持FCM解冻"><a href="#不使用自定义，所有应用都支持FCM解冻" class="headerlink" title="不使用自定义，所有应用都支持FCM解冻"></a>不使用自定义，所有应用都支持FCM解冻</h2><p>你需要更改的配置文件&#x2F;data&#x2F;system&#x2F;NoActive_xxxxxxxx&#x2F;的AdvanceConfig文件，receiveFCM后面的false改成true，保存后无需重启即可生效</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	&quot;adaptiveIcon&quot;:false,</span><br><span class="line">	&quot;fcmAppSet&quot;:[</span><br><span class="line">	],</span><br><span class="line">	&quot;receiveFCM&quot;:true,    </span><br><span class="line">	&quot;speedMode&quot;:false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>示例配置</p>
-</blockquote>
-<hr>
-<h2 id="使用自定义，选择部分应用可以FCM解冻"><a href="#使用自定义，选择部分应用可以FCM解冻" class="headerlink" title="使用自定义，选择部分应用可以FCM解冻"></a>使用自定义，选择部分应用可以FCM解冻</h2><p>配置文件依然为&#x2F;data&#x2F;system&#x2F;NoActive_xxxxxxxx&#x2F;的AdvanceConfig文件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	&quot;adaptiveIcon&quot;:false,</span><br><span class="line">	&quot;fcmAppSet&quot;:[</span><br><span class="line">        &quot;com.microsoft.office.outlook&quot;,</span><br><span class="line">        &quot;com.x8bit.bitwarden&quot;                 &lt;-- (在这里添加包名)</span><br><span class="line">	],</span><br><span class="line">	&quot;receiveFCM&quot;:false,</span><br><span class="line">	&quot;speedMode&quot;:false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<div class="note warning no-icon modern"><p>你依然需要填写符合<span style="color: red;">JSON格式</span>的包名</p>
-<p>如果填写包名，则receiveFCM应为false</p>
-</div>
-
-<hr>
-<h1 id="冻结Binder"><a href="#冻结Binder" class="headerlink" title="冻结Binder"></a>冻结Binder</h1><p>关于Binder的介绍请查看名词解读与定义：<a class="btn-beautify blue larger" href="/../%E5%90%8D%E8%AF%8D%E8%A7%A3%E8%AF%BB" title="点击查看名词解读"><i class="far fa-hand-point-right"></i><span>点击查看名词解读</span></a></p>
-<p>BinderFreeze用于阻断被冻结的应用与其它应用之间的通信，此特性自5.10内核开始支持，但目前仍然存在各种各样的问题，包括但不限于<span style="color: red;">应用假断网、出现卡屏或闪弹</span></p>
-<div class="note warning no-icon modern"><p>Noactive的BinderFreeze默认关闭，如果你出现以上这些问题请看：<a class="btn-beautify blue larger" href="/../%E5%90%8D%E8%AF%8D%E8%A7%A3%E8%AF%BB" title="名词解读"><i class="far fa-hand-point-right"></i><span>名词解读</span></a></p>
-</div>
-
-<p>6.1内核会比5.10&#x2F;5.15具有更良好的BinderFreeze体验，但仍然不建议使用BinderFreeze，目前的Binder临时解冻虽然不够完美，但依然是目前唯一不存在问题的解决方案</p>
-]]></content>
-      <categories>
-        <category>NoActive</category>
-      </categories>
-      <tags>
-        <tag>NoActive</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>NoActive新人必看文档</title>
     <url>//NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div align='center' ><font size='70'>NoActive</font></div>
@@ -205,7 +112,7 @@
 <p><img src="/NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/%E6%AD%A3%E7%A1%AE%E6%8D%90%E8%B5%A01.png" alt="为什么没微信支付"></p>
 <ol start="3">
 <li><p>前往激活码领取链接输入你领取激活码的邮箱地址与支付宝订单号<br>激活码领取链接：<a class="btn-beautify outline blue larger" href="https://app.myflv.cn/pay" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
-<div class="note warning no-icon modern"><p>  注:<br>现在无需进入频道也可随时获取最新的下载密码，前往激活码找回链接，输入你领取激活码的邮箱，等待激活码与最新版下载密码的发放即可<br>激活码找回链接：<a class="btn-beautify outline blue larger" href="http://app.myflv.cn/find" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
+<div class="note warning no-icon modern"><p>注:<br> 现在无需进入频道也可随时获取最新的下载密码，前往激活码找回链接，输入你领取激活码的邮箱，等待激活码与最新版下载密码的发放即可<br> 激活码找回链接：<a class="btn-beautify outline blue larger" href="http://app.myflv.cn/find" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
 </div></li>
 </ol>
 <p><img src="/NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/%E6%BF%80%E6%B4%BB%E7%A0%81%E6%89%BE%E5%9B%9E%E9%82%AE%E7%AE%B1%E6%A0%B7%E5%BC%8F.png" alt="激活码找回邮箱样式"></p>
@@ -336,7 +243,7 @@
 <h2 id="UI内一直弹出提示“请刷入附加模块并在LSPosed中激活NoActive”"><a href="#UI内一直弹出提示“请刷入附加模块并在LSPosed中激活NoActive”" class="headerlink" title="UI内一直弹出提示“请刷入附加模块并在LSPosed中激活NoActive”"></a>UI内一直弹出提示“请刷入附加模块并在LSPosed中激活NoActive”</h2><p>首先最基本的，你需要刷入附加模块，该“<span style="color: red;">附加模块</span>”指的是“<span style="color: red;">墓碑附加模块</span>”，而非Rekernel</p>
 <p>下载链接与模块解释点击<a class="btn-beautify outline blue larger" href="#墓碑附加模块的介绍" title="跳转到墓碑附加模块的介绍"><i class="far fa-hand-point-right"></i><span>跳转到墓碑附加模块的介绍</span></a></p>
 <hr>
-<h3 id="排查Magisk版本"><a href="#排查Magisk版本" class="headerlink" title="排查Magisk版本"></a>排查Magisk版本</h3><p>附加模块使用了Magisk Sepolicy来允许NoActive加载jni运行库，但Magisk版本号高于27000并小于27007的版本存在一个未修复的Sepolicy bug，无法正常加载Sepolicy规则导致NoActive不能正常运行</p>
+<h3 id="排查Magisk版本"><a href="#排查Magisk版本" class="headerlink" title="排查Magisk版本"></a>排查Magisk版本</h3><p>附加模块使用了Magiskpolicy来允许NoActive加载jni运行库，但Magisk版本号高于27000并小于27007的版本存在一个未修复的Sepolicy bug，无法正常加载Sepolicy规则导致NoActive不能正常运行</p>
 <p><span style="color: red;">如果你正在使用Kitsune Mask，请切换至Canary或Alpha，所有在Kitsune Mask环境下反馈的问题和bug均会被忽视</span></p>
 <div class="note warning no-icon modern"><p>解决方法：<br><br>1.切换至Magisk Alpha 27006及其以上<br><br>2.切换至Magisk Canary 27007及其以上<br><br>3.切换至其它Root方案<br><br><br>下载地址<br><br>Magisk官方：<a class="btn-beautify outline blue larger" href="https://github.com/topjohnwu/Magisk/releases" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a><br><br>Magisk Alpha：<a class="btn-beautify outline blue larger" href="https://install.appcenter.ms/users/vvb2060/apps/magisk/distribution_groups/public" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a><br><br>KernelSU：<a class="btn-beautify outline blue larger" href="https://kernelsu.org/zh_CN/" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a><br><br>Apatch：目前不建议使用，可能出现相同的问题</p>
 </div>
@@ -551,6 +458,99 @@
 
 <a class="btn-beautify orange larger" href="/../NoActive%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3" title="点击查看进阶文档"><i class="far fa-hand-point-right"></i><span>点击查看进阶文档</span></a>
 
+]]></content>
+      <categories>
+        <category>NoActive</category>
+      </categories>
+      <tags>
+        <tag>NoActive</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NoActive进阶文档</title>
+    <url>//NoActive%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div align='center' ><font size='70'>NoActive</font></div>
+<div align='center' ><font size='70'>进阶文档</font></div>
+
+<!-- <div class="note danger modern"><p>前方正在施工中, 稍后再来探索吧~</p>
+</div> -->
+
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><div class="note warning flat"><p>本文是为<mark class="hl-label orange">极客和有折腾精神的人</mark>所准备的进阶篇文档,大部分内容需要你自己动手实操，并且可能会出现包括但不限于以下几种情况：<span style="color: red;">手机变砖、出现发热与卡顿、环境异常等</span></p>
+</div>
+
+<p>如果你觉得本文有任何错误或需要补充的地方，可在频道<mark class="hl-label purple">@The End</mark>(频道ID)进行添加或修改</p>
+<div class="note red icon-padding flat"><i class="note-icon fa-solid fa-triangle-exclamation"></i><h1 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h1><div align='center' ><font size='4'>你所进行的一切行为均由你自己承担责任，别砖了过来找我，不会提供任何帮助，自己想办法</font></div>
+</div>
+
+<hr>
+<h1 id="Re-Kernel-KPM相关问题"><a href="#Re-Kernel-KPM相关问题" class="headerlink" title="Re-Kernel KPM相关问题"></a>Re-Kernel KPM相关问题</h1><p>KPM模块为Apatch独占（即Apatch管理器内核模块一栏），所以你需要刷入Apatch才能使用KPM版Re-Kernel<br><br></p>
+<hr>
+<h2 id="Apatch与其它Root方案共存"><a href="#Apatch与其它Root方案共存" class="headerlink" title="Apatch与其它Root方案共存"></a>Apatch与其它Root方案共存</h2><p>你需要两个东西：KernelPatch镜像与Apatch Apk</p>
+<p>KernelPatch：<a class="btn-beautify outline blue larger" href="https://github.com/bmax121/kernelpatch" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
+<p>Apatch：<a class="btn-beautify outline blue larger" href="https://github.com/bmax121/APatch" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
+<div class="note warning no-icon modern"><p>无论何时都只建议使用Release版本进行替换，Pre-Release或Github Ci构建的的版本可能导致不可知的问题</p>
+<p>以及，请务必使Apatch安装包的<span style="color: red;">原KernelPatch版本号与你要替换的版本号</span>对应，<span style="color: red;">不对应的版本号会不生效，同时有极大概率导致变砖</span>，一定注意</p>
+</div>
+
+<p>这里以Apatch 10763版本为例，下载对应的kpimg-linux</p>
+<p><img src="/NoActive%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3/%E5%85%B1%E5%AD%98.png" alt="共存"></p>
+<p>然后重命名kpimg-linux为kpimg，并替换掉Apatch Apk当中的kpimg</p>
+<div class="note warning no-icon modern"><p>kpimg在assets文件夹</p>
+</div>
+
+<p><img src="/NoActive%E8%BF%9B%E9%98%B6%E6%96%87%E6%A1%A3/%E5%85%B1%E5%AD%982.png" alt="共存"></p>
+<p>然后用Scene之类的工具提取你当前的boot.img，用你替换完的Apatch修补后再刷入boot.img</p>
+<div class="note warning no-icon modern"><p>VAB分区的设备你当前处于哪个分区就提取哪个，别搞错活动分区了</p>
+<p>例：A分区设备提取boot_a.img</p>
+</div>
+
+<p>至此，共存部分结束，重启后你会发现仅内核模块可用，Root授权和系统模块均不可用，这时就可以使用Re-Kernel KPM了</p>
+<div class="note warning no-icon modern"><p>只建议先加载，然后再使用嵌入，以防止出现内核不兼容导致的<span style="color: red;">卡开机</span>问题等</p>
+</div>
+
+<hr>
+<h2 id="用Apatch作为Root方案"><a href="#用Apatch作为Root方案" class="headerlink" title="用Apatch作为Root方案"></a>用Apatch作为Root方案</h2><p>流程与其它Root方案几乎一致</p>
+<p>Apatch Apk：<a class="btn-beautify outline blue larger" href="https://github.com/bmax121/APatch" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
+<div class="note warning no-icon modern"><p>无论何时，Apatch提取并修补的都是<span style="color: red;">boot分区</span>，除非Google未来更换Linux内核位置，否则均为boot</p>
+</div>
+
+<hr>
+<h2 id="从Magisk-Kernel-SU切换至Apatch"><a href="#从Magisk-Kernel-SU切换至Apatch" class="headerlink" title="从Magisk&#x2F;Kernel SU切换至Apatch"></a>从Magisk&#x2F;Kernel SU切换至Apatch</h2><p>太简单了，不想写，你们自己看吧：<a class="btn-beautify outline blue larger" href="https://coolapk.com/feed/57809622?shareKey=MjMyYjNmN2YyNzJhNjZkMWM1ZjU~&shareUid=22627121&shareFrom=com.coolapk.market_13.3.3" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
+<div class="note warning no-icon modern"><p>使用此方法可能会导致Root方案残留，我只建议走2的流程，使用纯净boot修补然后正常刷入</p>
+</div>
+
+<hr>
+<h1 id="内存优化"><a href="#内存优化" class="headerlink" title="内存优化"></a>内存优化</h1><p>如果你希望修改内存的保留值，你可以到<mark class="hl-label orange">/data/system/NoActive_xxxxxxxx/config/MemConfig.json</mark>中修改freeRAM或freeSWAP</p>
+<p>0(自动)，负整数(关闭)，正整数为指定的值单位为<span style="color: red;">MB</span></p>
+<div class="note warning no-icon modern"><p><span style="color: red;">注意：ZRAM和Swapfile都属于SWAP(交换分区)<br>你需要写入符合JSON语法格式的配置，否则Noactive会自动清除错误配置并还原</span></p>
+</div>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	&quot;freeRAM&quot;:0,   &lt;---- 物理内存保留值</span><br><span class="line">	&quot;freeSWAP&quot;:0,  &lt;---- 交换分区保留值</span><br><span class="line">	&quot;highPriorityUidSet&quot;:[ &lt;-- (高)</span><br><span class="line">		10258,</span><br><span class="line">		10299</span><br><span class="line">	],</span><br><span class="line">	&quot;lowPriorityUidSet&quot;:[ &lt;-- (低)</span><br><span class="line">		10272,</span><br><span class="line">		10289</span><br><span class="line">	],</span><br><span class="line">	&quot;mediumPriorityUidSet&quot;:[ &lt;-- (中)</span><br><span class="line">		</span><br><span class="line">	]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="FCM解冻"><a href="#FCM解冻" class="headerlink" title="FCM解冻"></a>FCM解冻</h1><p>Noactive自pro-173往后支持FCM解冻，由于配置文件变更，此处仅讨论此文发出时的最新版pro-185</p>
+<hr>
+<h2 id="不使用自定义，所有应用都支持FCM解冻"><a href="#不使用自定义，所有应用都支持FCM解冻" class="headerlink" title="不使用自定义，所有应用都支持FCM解冻"></a>不使用自定义，所有应用都支持FCM解冻</h2><p>你需要更改的配置文件&#x2F;data&#x2F;system&#x2F;NoActive_xxxxxxxx&#x2F;的AdvanceConfig文件，receiveFCM后面的false改成true，保存后无需重启即可生效</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	&quot;adaptiveIcon&quot;:false,</span><br><span class="line">	&quot;fcmAppSet&quot;:[</span><br><span class="line">	],</span><br><span class="line">	&quot;receiveFCM&quot;:true,    </span><br><span class="line">	&quot;speedMode&quot;:false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>示例配置</p>
+</blockquote>
+<hr>
+<h2 id="使用自定义，选择部分应用可以FCM解冻"><a href="#使用自定义，选择部分应用可以FCM解冻" class="headerlink" title="使用自定义，选择部分应用可以FCM解冻"></a>使用自定义，选择部分应用可以FCM解冻</h2><p>配置文件依然为&#x2F;data&#x2F;system&#x2F;NoActive_xxxxxxxx&#x2F;的AdvanceConfig文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	&quot;adaptiveIcon&quot;:false,</span><br><span class="line">	&quot;fcmAppSet&quot;:[</span><br><span class="line">        &quot;com.microsoft.office.outlook&quot;,</span><br><span class="line">        &quot;com.x8bit.bitwarden&quot;                 &lt;-- (在这里添加包名)</span><br><span class="line">	],</span><br><span class="line">	&quot;receiveFCM&quot;:false,</span><br><span class="line">	&quot;speedMode&quot;:false</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<div class="note warning no-icon modern"><p>你依然需要填写符合<span style="color: red;">JSON格式</span>的包名</p>
+<p>如果填写包名，则receiveFCM应为false</p>
+</div>
+
+<hr>
+<h1 id="冻结Binder"><a href="#冻结Binder" class="headerlink" title="冻结Binder"></a>冻结Binder</h1><p>关于Binder的介绍请查看名词解读与定义：<a class="btn-beautify blue larger" href="/../%E5%90%8D%E8%AF%8D%E8%A7%A3%E8%AF%BB" title="点击查看名词解读"><i class="far fa-hand-point-right"></i><span>点击查看名词解读</span></a></p>
+<p>BinderFreeze用于阻断被冻结的应用与其它应用之间的通信，此特性自5.10内核开始支持，但目前仍然存在各种各样的问题，包括但不限于<span style="color: red;">应用假断网、出现卡屏或闪弹</span></p>
+<div class="note warning no-icon modern"><p>Noactive的BinderFreeze默认关闭，如果你出现以上这些问题请看：<a class="btn-beautify blue larger" href="/../%E5%90%8D%E8%AF%8D%E8%A7%A3%E8%AF%BB" title="名词解读"><i class="far fa-hand-point-right"></i><span>名词解读</span></a></p>
+</div>
+
+<p>6.1内核会比5.10&#x2F;5.15具有更良好的BinderFreeze体验，但仍然不建议使用BinderFreeze，目前的Binder临时解冻虽然不够完美，但依然是目前唯一不存在问题的解决方案</p>
 ]]></content>
       <categories>
         <category>NoActive</category>

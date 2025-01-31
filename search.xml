@@ -127,7 +127,10 @@
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><div class="note warning flat"><p>本文是为<mark class="hl-label orange">极客和有折腾精神的人</mark>所准备的进阶篇文档,大部分内容需要你自己动手实操，并且可能会出现包括但不限于以下几种情况：<span style="color: red;">手机变砖、出现发热与卡顿、环境异常等</span></p>
 </div>
 
-<p>如果你觉得本文有任何错误或需要补充的地方，可在频道<mark class="hl-label purple">@The End</mark>(频道ID)进行添加或修改</p>
+<p>如果你觉得本文有任何错误或需要补充的地方，可在频道<span style="color: purple;">@Abyssal Dawn</span>(频道ID)进行添加或修改</p>
+<blockquote>
+<p>如果找不到<span style="color: purple;">@Abyssal Dawn</span>(频道ID)可以尝试<span style="color: purple;">@璨梦踏月-JOYUI13-5.10</span>(频道ID)</p>
+</blockquote>
 <div class="note red icon-padding flat"><i class="note-icon fa-solid fa-triangle-exclamation"></i><h1 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h1><div align='center' ><font size='4'>你所进行的一切行为均由你自己承担责任，别砖了过来找我，不会提供任何帮助，自己想办法</font></div>
 </div>
 
@@ -215,12 +218,9 @@
 
 <div align='center' ><font size='70'>新人必看文档</font></div>
 
-<!-- <div class="note danger no-icon flat"><p><span style="color: red;">此文档已放弃维护,同时深色模式下可能存在问题</span> </p>
-</div> -->
 
 
-
-<p>本文由<span style="color: purple;">@有问题看新人必看</span>(频道ID),<span style="color: purple;">@The End</span>(频道ID),<span style="color: purple;">@璨梦踏月-JOYUI13-5.10</span>(频道ID)共同维护,只会将个人认为比较<span style="color: red;">重要</span>,或者官方文档<span style="color: red;">没有写</span>的内容放进来,如果文中<span style="color: red;">有错误</span>或<span style="color: red;">你有补充</span>可以在频道@我们进行<span style="color: red;">添加&#x2F;修改</span></p>
+<p>本文由<span style="color: purple;">@小天（？）</span>(频道ID),<span style="color: purple;">@Abyssal Dawn</span>(频道ID),<span style="color: purple;">@璨梦踏月-JOYUI13-5.10</span>(频道ID)共同维护,只会将个人认为比较<span style="color: red;">重要</span>,或者官方文档<span style="color: red;">没有写</span>的内容放进来,如果文中<span style="color: red;">有错误</span>或<span style="color: red;">你有补充</span>可以在频道@我们进行<span style="color: red;">添加&#x2F;修改</span></p>
 <p><strong>转载自腾讯文档:</strong> <a href="https://docs.qq.com/doc/DS0hGeUppQmFyWW5X">NoActive新人必看</a>,<a href="https://docs.qq.com/doc/DS05PalBZbFR6cEdB">NoActive进阶文档</a>,<a href="https://docs.qq.com/doc/DWG5HUUx5UGREd0ti">名词解读</a></p>
 <blockquote>
 <p>已经完成全部的迁移,腾讯文档现已放弃维护，请直接查看本篇文章</p>
@@ -539,7 +539,7 @@
 
 
 <p>官方文档原话：</p>
-<p>为了保证系统稳定，系统应用不会被冻结，你可以修改&#x2F;data&#x2F;system&#x2F;NoActive&#x2F;config&#x2F;MasterConfig.json</p>
+<p>为了保证系统稳定，系统应用不会被冻结，你可以修改&#x2F;data&#x2F;system&#x2F;NoActive_xxxxxxxx&#x2F;config&#x2F;MasterConfig.json</p>
 <p>通过userAppSet添加用户应用，格式 应用包名 例如 com.xiaomi.smarthome</p>
 <p>再次提醒：谨慎进行配置！！！</p>
 <p>再次提醒：谨慎进行配置！！！</p>

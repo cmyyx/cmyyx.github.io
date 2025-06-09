@@ -220,13 +220,17 @@
 
 
 
-<p>本文由<span style="color: purple;">@小天（？）</span>(频道ID),<span style="color: purple;">@Abyssal Dawn</span>(频道ID),<span style="color: purple;">@璨梦踏月-JOYUI13-5.10</span>(频道ID)共同维护,只会将个人认为比较<span style="color: red;">重要</span>,或者官方文档<span style="color: red;">没有写</span>的内容放进来,如果文中<span style="color: red;">有错误</span>或<span style="color: red;">你有补充</span>可以在频道@我们进行<span style="color: red;">添加&#x2F;修改</span></p>
+<p>本文由<span style="color: purple;">@小天（小康PRO版）</span>(频道ID),<span style="color: purple;">@Glitchspire</span>(频道ID),<span style="color: purple;">@璨梦踏月-JOYUI13-5.10</span>(频道ID)共同维护,只会将个人认为比较<span style="color: red;">重要</span>,或者官方文档<span style="color: red;">没有写</span>的内容放进来,如果文中<span style="color: red;">有错误</span>或<span style="color: red;">你有补充</span>可以在频道@我们进行<span style="color: red;">添加&#x2F;修改</span></p>
 <p><strong>转载自腾讯文档:</strong> <a href="https://docs.qq.com/doc/DS0hGeUppQmFyWW5X">NoActive新人必看</a>,<a href="https://docs.qq.com/doc/DS05PalBZbFR6cEdB">NoActive进阶文档</a>,<a href="https://docs.qq.com/doc/DWG5HUUx5UGREd0ti">名词解读</a></p>
 <blockquote>
 <p>已经完成全部的迁移,腾讯文档现已放弃维护，请直接查看本篇文章</p>
 </blockquote>
 <p>封面来自: <a href="https://www.coolapk.com/feed/57006904?shareKey=NzNiMjExZmM3MWVkNjc3MTViMTg~&shareUid=26757217&shareFrom=com.coolapk.market_13.3.6">Starrhymelodge的酷安</a></p>
 <p>如果你认为界面其他元素打扰了阅读可在右下角设置中开启<strong>阅读模式</strong>,也可进行<strong>深色模式切换</strong>以及<strong>单栏&#x2F;双栏切换</strong></p>
+<div class="note danger modern"><p>新人必看已完全停更，主要维护者均已放弃维护此文档，如你想继续维护可联系任意一人@Glitchspire@小天（小康PRO版）@璨梦踏月-JOYUI13-5.10 </p>
+<p>基于以上原因，一切新人必看与官方文档不符的部分均以官方文档为准，也请不要以新人必看内的内容来质疑官方文档</p>
+</div>
+
 <p><strong>官方文档链接：</strong><a href="https://app.myflv.cn/"><strong>查看链接</strong></a></p>
 <p><strong>官方下载站链接：</strong><a href="https://bzmshang.top/J/down.app.myflv.cn"><strong>查看链接</strong></a></p>
 <p><strong>名词解读：</strong> <a href="../%E5%90%8D%E8%AF%8D%E8%A7%A3%E8%AF%BB"><strong>查看链接</strong></a></p>
@@ -343,23 +347,18 @@
 <p><img src="/NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/%E6%BF%80%E6%B4%BB%E7%A0%81%E8%AF%B4%E6%98%8E1.png" alt="激活码说明1"></p>
 <p><img src="/NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/%E6%BF%80%E6%B4%BB%E7%A0%81%E8%AF%B4%E6%98%8E2.png" alt="激活码说明2"></p>
 <ol start="2">
-<li><p>2024年2月18号后捐赠，默认1个激活码10RMB<br> 如果出现设备数量达到上线，将面临2个选择  </p>
-<ul>
-<li>1 想同时激活</li>
-</ul>
-<p> 需要捐赠多10r，然后前往激活码领取链接输入你领取激活码的邮箱地址与支付宝订单号<br> 激活码领取链接：<a class="btn-beautify outline blue larger" href="https://app.myflv.cn/pay" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
-<ul>
-<li>2 不想同时激活的需要清除激活信息</li>
-</ul>
-</li>
+<li>2024年2月18号后捐赠，默认1个激活码10RMB<br> 如果出现设备数量达到上线<br> 需要捐赠多10r，然后前往激活码领取链接输入你领取激活码的邮箱地址与支付宝订单号<br> 激活码领取链接：<a class="btn-beautify outline blue larger" href="https://app.myflv.cn/pay" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></li>
 </ol>
-<div class="note warning no-icon modern"><p>清除激活信息流程：<br>用接收激活码的邮箱（领取激活码时发的邮箱）往<a class="btn-beautify outline purple larger" href="mailto:admin@100172.xyz" title="admin@100172.xyz"><i class="far fa-hand-point-right"></i><span>admin@100172.xyz</span></a>发送邮件，邮件的主题为：清除激活信息，邮箱的内容写清除激活码的理由，旧机去处，新机证明或刷机证据<br>（例如：换手机了，再带上旧机出售截图与新机购买证明）</p>
-</div>
+<!--
 
+![激活码说明3](激活码说明3.png)
 
-<p><img src="/NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/%E6%BF%80%E6%B4%BB%E7%A0%81%E8%AF%B4%E6%98%8E3.png" alt="激活码说明3"></p>
-<p><img src="/NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/%E6%BF%80%E6%B4%BB%E7%A0%81%E8%AF%B4%E6%98%8E4.png" alt="激活码说明4"></p>
-<p><img src="/NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/%E6%BF%80%E6%B4%BB%E7%A0%81%E8%AF%B4%E6%98%8E5.jpg" alt="激活码说明5"></p>
+![激活码说明4](激活码说明4.png)
+
+![激活码说明5](激活码说明5.jpg)
+
+-->
+
 <p><img src="/NoActive%E6%96%B0%E4%BA%BA%E5%BF%85%E7%9C%8B%E6%96%87%E6%A1%A3/%E6%BF%80%E6%B4%BB%E7%A0%81%E8%AF%B4%E6%98%8E6.jpg" alt="激活码说明6"></p>
 <div class="note warning no-icon modern"><p>注：<br><br>请注意，<span style="color: red;">刷入或关闭改主板ID，序列号，机型的模块</span>都会导致<span style="color: red;">NoActive激活失效</span>，使用该类型模块导致的激活失效，清除激活信息也会记录在3个月清除一次的记录内<br><br>如果你实在想对应用更改机型，可以考虑使用zygisk-Tweaker对应用进行配置更改机型， 或自行寻找能对应用单独改机型的模块修改。<br><br>Zygisk-Tweaker与Zygisk-Next<span style="color: red;">疑似存在兼容性的问题</span>，同时使用<span style="color: red;">可能</span>会发生卡第二屏的现象。<br><br>使用Zygisk-Tweaker对应用进行配置后，会<span style="color: red;">泄露Zygisk被配置的应用检测到</span>。<br><br>下载链接：<a class="btn-beautify outline blue larger" href="https://www.coolapk.com/feed/51335047" title="查看链接"><i class="far fa-hand-point-right"></i><span>查看链接</span></a></p>
 </div>
